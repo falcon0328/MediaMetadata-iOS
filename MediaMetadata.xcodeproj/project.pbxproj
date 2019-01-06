@@ -195,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				5540AAEE21E22C3C00A1A533 /* MediaMetadaSDK.h */,
+				5540AB0B21E24ED800A1A533 /* Media */,
+				5540AB0C21E24EE400A1A533 /* Metadata */,
 				5540AAEF21E22C3C00A1A533 /* Info.plist */,
 			);
 			path = MediaMetadaSDK;
@@ -207,6 +209,20 @@
 				5540AAFD21E22C3C00A1A533 /* Info.plist */,
 			);
 			path = MediaMetadaSDKTests;
+			sourceTree = "<group>";
+		};
+		5540AB0B21E24ED800A1A533 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		5540AB0C21E24EE400A1A533 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Metadata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
