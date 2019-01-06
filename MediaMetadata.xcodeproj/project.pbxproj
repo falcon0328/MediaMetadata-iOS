@@ -19,6 +19,9 @@
 		5540AAFE21E22C3C00A1A533 /* MediaMetadaSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5540AAEE21E22C3C00A1A533 /* MediaMetadaSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5540AB0121E22C3C00A1A533 /* MediaMetadaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */; };
 		5540AB0221E22C3C00A1A533 /* MediaMetadaSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5540AB0E21E24F7300A1A533 /* MediaLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB0D21E24F7300A1A533 /* MediaLibraryManager.swift */; };
+		5540AB1021E24F8300A1A533 /* MediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB0F21E24F8300A1A533 /* MediaLibrary.swift */; };
+		5540AB1221E24FD700A1A533 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB1121E24FD700A1A533 /* Metadata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		5540AAF421E22C3C00A1A533 /* MediaMetadaSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMetadaSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5540AAFB21E22C3C00A1A533 /* MediaMetadaSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMetadaSDKTests.swift; sourceTree = "<group>"; };
 		5540AAFD21E22C3C00A1A533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5540AB0D21E24F7300A1A533 /* MediaLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryManager.swift; sourceTree = "<group>"; };
+		5540AB0F21E24F8300A1A533 /* MediaLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibrary.swift; sourceTree = "<group>"; };
+		5540AB1121E24FD700A1A533 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +220,8 @@
 		5540AB0B21E24ED800A1A533 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				5540AB0D21E24F7300A1A533 /* MediaLibraryManager.swift */,
+				5540AB0F21E24F8300A1A533 /* MediaLibrary.swift */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -221,6 +229,7 @@
 		5540AB0C21E24EE400A1A533 /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				5540AB1121E24FD700A1A533 /* Metadata.swift */,
 			);
 			path = Metadata;
 			sourceTree = "<group>";
@@ -354,6 +363,7 @@
 					};
 					5540AAEB21E22C3C00A1A533 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					5540AAF321E22C3C00A1A533 = {
 						CreatedOnToolsVersion = 10.1;
@@ -454,6 +464,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5540AB1021E24F8300A1A533 /* MediaLibrary.swift in Sources */,
+				5540AB1221E24FD700A1A533 /* Metadata.swift in Sources */,
+				5540AB0E21E24F7300A1A533 /* MediaLibraryManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +647,7 @@
 		5540AADF21E1C6E400A1A533 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BTZN69U72;
@@ -652,6 +666,7 @@
 		5540AAE021E1C6E400A1A533 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BTZN69U72;
@@ -752,6 +767,7 @@
 		5540AB0421E22C3C00A1A533 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -770,6 +786,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadaSDK";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -780,6 +797,7 @@
 		5540AB0521E22C3C00A1A533 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
