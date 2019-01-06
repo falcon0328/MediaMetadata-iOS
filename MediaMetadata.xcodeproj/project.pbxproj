@@ -14,6 +14,11 @@
 		5540AAC421E1C6E400A1A533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5540AAC221E1C6E400A1A533 /* LaunchScreen.storyboard */; };
 		5540AACF21E1C6E400A1A533 /* MediaMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AACE21E1C6E400A1A533 /* MediaMetadataTests.swift */; };
 		5540AADA21E1C6E400A1A533 /* MediaMetadataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AAD921E1C6E400A1A533 /* MediaMetadataUITests.swift */; };
+		5540AAF521E22C3C00A1A533 /* MediaMetadaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */; };
+		5540AAFC21E22C3C00A1A533 /* MediaMetadaSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AAFB21E22C3C00A1A533 /* MediaMetadaSDKTests.swift */; };
+		5540AAFE21E22C3C00A1A533 /* MediaMetadaSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5540AAEE21E22C3C00A1A533 /* MediaMetadaSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5540AB0121E22C3C00A1A533 /* MediaMetadaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */; };
+		5540AB0221E22C3C00A1A533 /* MediaMetadaSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +36,42 @@
 			remoteGlobalIDString = 5540AAB521E1C6E000A1A533;
 			remoteInfo = MediaMetadata;
 		};
+		5540AAF621E22C3C00A1A533 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5540AAAE21E1C6E000A1A533 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5540AAEB21E22C3C00A1A533;
+			remoteInfo = MediaMetadaSDK;
+		};
+		5540AAF821E22C3C00A1A533 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5540AAAE21E1C6E000A1A533 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5540AAB521E1C6E000A1A533;
+			remoteInfo = MediaMetadata;
+		};
+		5540AAFF21E22C3C00A1A533 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5540AAAE21E1C6E000A1A533 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5540AAEB21E22C3C00A1A533;
+			remoteInfo = MediaMetadaSDK;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5540AB0621E22C3C00A1A533 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5540AB0221E22C3C00A1A533 /* MediaMetadaSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5540AAB621E1C6E000A1A533 /* MediaMetadata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaMetadata.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +87,12 @@
 		5540AAD521E1C6E400A1A533 /* MediaMetadataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMetadataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5540AAD921E1C6E400A1A533 /* MediaMetadataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMetadataUITests.swift; sourceTree = "<group>"; };
 		5540AADB21E1C6E400A1A533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MediaMetadaSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5540AAEE21E22C3C00A1A533 /* MediaMetadaSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaMetadaSDK.h; sourceTree = "<group>"; };
+		5540AAEF21E22C3C00A1A533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5540AAF421E22C3C00A1A533 /* MediaMetadaSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMetadaSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5540AAFB21E22C3C00A1A533 /* MediaMetadaSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMetadaSDKTests.swift; sourceTree = "<group>"; };
+		5540AAFD21E22C3C00A1A533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5540AB0121E22C3C00A1A533 /* MediaMetadaSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +118,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5540AAE921E22C3C00A1A533 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5540AAF121E22C3C00A1A533 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5540AAF521E22C3C00A1A533 /* MediaMetadaSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +142,8 @@
 				5540AAB821E1C6E000A1A533 /* MediaMetadata */,
 				5540AACD21E1C6E400A1A533 /* MediaMetadataTests */,
 				5540AAD821E1C6E400A1A533 /* MediaMetadataUITests */,
+				5540AAED21E22C3C00A1A533 /* MediaMetadaSDK */,
+				5540AAFA21E22C3C00A1A533 /* MediaMetadaSDKTests */,
 				5540AAB721E1C6E000A1A533 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +154,8 @@
 				5540AAB621E1C6E000A1A533 /* MediaMetadata.app */,
 				5540AACA21E1C6E400A1A533 /* MediaMetadataTests.xctest */,
 				5540AAD521E1C6E400A1A533 /* MediaMetadataUITests.xctest */,
+				5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */,
+				5540AAF421E22C3C00A1A533 /* MediaMetadaSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +191,36 @@
 			path = MediaMetadataUITests;
 			sourceTree = "<group>";
 		};
+		5540AAED21E22C3C00A1A533 /* MediaMetadaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5540AAEE21E22C3C00A1A533 /* MediaMetadaSDK.h */,
+				5540AAEF21E22C3C00A1A533 /* Info.plist */,
+			);
+			path = MediaMetadaSDK;
+			sourceTree = "<group>";
+		};
+		5540AAFA21E22C3C00A1A533 /* MediaMetadaSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				5540AAFB21E22C3C00A1A533 /* MediaMetadaSDKTests.swift */,
+				5540AAFD21E22C3C00A1A533 /* Info.plist */,
+			);
+			path = MediaMetadaSDKTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5540AAE721E22C3C00A1A533 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5540AAFE21E22C3C00A1A533 /* MediaMetadaSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		5540AAB521E1C6E000A1A533 /* MediaMetadata */ = {
@@ -135,10 +230,12 @@
 				5540AAB221E1C6E000A1A533 /* Sources */,
 				5540AAB321E1C6E000A1A533 /* Frameworks */,
 				5540AAB421E1C6E000A1A533 /* Resources */,
+				5540AB0621E22C3C00A1A533 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5540AB0021E22C3C00A1A533 /* PBXTargetDependency */,
 			);
 			name = MediaMetadata;
 			productName = MediaMetadata;
@@ -181,6 +278,43 @@
 			productReference = 5540AAD521E1C6E400A1A533 /* MediaMetadataUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5540AAEB21E22C3C00A1A533 /* MediaMetadaSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5540AB0321E22C3C00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadaSDK" */;
+			buildPhases = (
+				5540AAE721E22C3C00A1A533 /* Headers */,
+				5540AAE821E22C3C00A1A533 /* Sources */,
+				5540AAE921E22C3C00A1A533 /* Frameworks */,
+				5540AAEA21E22C3C00A1A533 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaMetadaSDK;
+			productName = MediaMetadaSDK;
+			productReference = 5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5540AAF321E22C3C00A1A533 /* MediaMetadaSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5540AB0721E22C3C00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadaSDKTests" */;
+			buildPhases = (
+				5540AAF021E22C3C00A1A533 /* Sources */,
+				5540AAF121E22C3C00A1A533 /* Frameworks */,
+				5540AAF221E22C3C00A1A533 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5540AAF721E22C3C00A1A533 /* PBXTargetDependency */,
+				5540AAF921E22C3C00A1A533 /* PBXTargetDependency */,
+			);
+			name = MediaMetadaSDKTests;
+			productName = MediaMetadaSDKTests;
+			productReference = 5540AAF421E22C3C00A1A533 /* MediaMetadaSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +336,13 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 5540AAB521E1C6E000A1A533;
 					};
+					5540AAEB21E22C3C00A1A533 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5540AAF321E22C3C00A1A533 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5540AAB521E1C6E000A1A533;
+					};
 				};
 			};
 			buildConfigurationList = 5540AAB121E1C6E000A1A533 /* Build configuration list for PBXProject "MediaMetadata" */;
@@ -220,6 +361,8 @@
 				5540AAB521E1C6E000A1A533 /* MediaMetadata */,
 				5540AAC921E1C6E400A1A533 /* MediaMetadataTests */,
 				5540AAD421E1C6E400A1A533 /* MediaMetadataUITests */,
+				5540AAEB21E22C3C00A1A533 /* MediaMetadaSDK */,
+				5540AAF321E22C3C00A1A533 /* MediaMetadaSDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +386,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5540AAD321E1C6E400A1A533 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5540AAEA21E22C3C00A1A533 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5540AAF221E22C3C00A1A533 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +434,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5540AAE821E22C3C00A1A533 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5540AAF021E22C3C00A1A533 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5540AAFC21E22C3C00A1A533 /* MediaMetadaSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +461,21 @@
 			isa = PBXTargetDependency;
 			target = 5540AAB521E1C6E000A1A533 /* MediaMetadata */;
 			targetProxy = 5540AAD621E1C6E400A1A533 /* PBXContainerItemProxy */;
+		};
+		5540AAF721E22C3C00A1A533 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5540AAEB21E22C3C00A1A533 /* MediaMetadaSDK */;
+			targetProxy = 5540AAF621E22C3C00A1A533 /* PBXContainerItemProxy */;
+		};
+		5540AAF921E22C3C00A1A533 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5540AAB521E1C6E000A1A533 /* MediaMetadata */;
+			targetProxy = 5540AAF821E22C3C00A1A533 /* PBXContainerItemProxy */;
+		};
+		5540AB0021E22C3C00A1A533 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5540AAEB21E22C3C00A1A533 /* MediaMetadaSDK */;
+			targetProxy = 5540AAFF21E22C3C00A1A533 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -546,6 +733,102 @@
 			};
 			name = Release;
 		};
+		5540AB0421E22C3C00A1A533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3BTZN69U72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MediaMetadaSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadaSDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5540AB0521E22C3C00A1A533 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3BTZN69U72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MediaMetadaSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadaSDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5540AB0821E22C3C00A1A533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BTZN69U72;
+				INFOPLIST_FILE = MediaMetadaSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadaSDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaMetadata.app/MediaMetadata";
+			};
+			name = Debug;
+		};
+		5540AB0921E22C3C00A1A533 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BTZN69U72;
+				INFOPLIST_FILE = MediaMetadaSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadaSDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaMetadata.app/MediaMetadata";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +864,24 @@
 			buildConfigurations = (
 				5540AAE521E1C6E400A1A533 /* Debug */,
 				5540AAE621E1C6E400A1A533 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5540AB0321E22C3C00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5540AB0421E22C3C00A1A533 /* Debug */,
+				5540AB0521E22C3C00A1A533 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5540AB0721E22C3C00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadaSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5540AB0821E22C3C00A1A533 /* Debug */,
+				5540AB0921E22C3C00A1A533 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
