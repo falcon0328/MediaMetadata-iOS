@@ -28,6 +28,11 @@ public protocol Metadata {
 }
 
 extension Metadata {
+    mutating func write(metadataKey: MetadataKey, value: Any) -> Bool {
+        rawValue[metadataKey] = value
+        return true
+    }
+    
     func read(metadataKey: MetadataKey) -> Any? {
         return rawValue[metadataKey]
     }
