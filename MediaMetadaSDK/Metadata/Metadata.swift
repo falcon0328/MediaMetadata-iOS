@@ -18,7 +18,7 @@ public protocol Metadata {
     ///   - metadataKey: メタデータのキー
     ///   - value: メタデータとして格納したい値
     /// - Returns: 追加の成否
-    func write(metadataKey: MetadataKey, value: Any) -> Bool
+    mutating func write(metadataKey: MetadataKey, value: Any) -> Bool
     /// 指定したキー値を持つメタデータの読み込み
     ///
     /// 指定したキー値を持つメタデータが存在しない場合、nilを返す
