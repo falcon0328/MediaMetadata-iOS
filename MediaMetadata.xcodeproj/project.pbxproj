@@ -23,6 +23,8 @@
 		5540AB1021E24F8300A1A533 /* MediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB0F21E24F8300A1A533 /* MediaLibrary.swift */; };
 		5540AB1221E24FD700A1A533 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB1121E24FD700A1A533 /* Metadata.swift */; };
 		5540AB1421E2515600A1A533 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB1321E2515600A1A533 /* Media.swift */; };
+		5540AB1621E35DD000A1A533 /* MetadataKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB1521E35DD000A1A533 /* MetadataKey.swift */; };
+		5540AB1821E35DDB00A1A533 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB1721E35DDB00A1A533 /* MediaType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		5540AB0F21E24F8300A1A533 /* MediaLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibrary.swift; sourceTree = "<group>"; };
 		5540AB1121E24FD700A1A533 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		5540AB1321E2515600A1A533 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		5540AB1521E35DD000A1A533 /* MetadataKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataKey.swift; sourceTree = "<group>"; };
+		5540AB1721E35DDB00A1A533 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +229,8 @@
 				5540AB0D21E24F7300A1A533 /* MediaLibraryManager.swift */,
 				5540AB0F21E24F8300A1A533 /* MediaLibrary.swift */,
 				5540AB1321E2515600A1A533 /* Media.swift */,
+				5540AB1521E35DD000A1A533 /* MetadataKey.swift */,
+				5540AB1721E35DDB00A1A533 /* MediaType.swift */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -467,10 +473,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5540AB1821E35DDB00A1A533 /* MediaType.swift in Sources */,
 				5540AB1021E24F8300A1A533 /* MediaLibrary.swift in Sources */,
 				5540AB1221E24FD700A1A533 /* Metadata.swift in Sources */,
 				5540AB1421E2515600A1A533 /* Media.swift in Sources */,
 				5540AB0E21E24F7300A1A533 /* MediaLibraryManager.swift in Sources */,
+				5540AB1621E35DD000A1A533 /* MetadataKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
