@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+/// メタデータを指定する際に利用する列挙型
+public enum MetadataKey: String {
+    /// EXIF
+    case exif = "{Exif}"
+    /// IPTC
+    case iptc = "{Iptc}"
+    /// JFIF
+    case jfif = "{Jfif}"
+    /// TIFF
+    case tiff = "{Tiff}"
+}
