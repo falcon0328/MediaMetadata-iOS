@@ -11,7 +11,7 @@ import Foundation
 /// メタデータを表現するためのプロトコル
 public protocol Metadata {
     /// メタデータを格納した辞書
-    var rawValue: [String: Any] { get }
+    var rawValue: [String: Any] { get set }
     /// メタデータの追加
     ///
     /// - Parameters:
