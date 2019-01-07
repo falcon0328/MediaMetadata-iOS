@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+/// メディアの種類を表す列挙型
+public enum MediaType: Int {
+    /// 写真
+    case photo = 0
+    /// 動画
+    case video = 1
+}
