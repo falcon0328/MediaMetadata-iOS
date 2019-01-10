@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Photos
 
 /// メディアを管理するためのクラス
 class MediaLibrary: MediaLibraryManager {
@@ -16,6 +17,6 @@ class MediaLibrary: MediaLibraryManager {
     }
     
     func delete(localIdentifier: [String], completion: ((Bool, Error?) -> Void)?) {
-
+        
     }
 }
