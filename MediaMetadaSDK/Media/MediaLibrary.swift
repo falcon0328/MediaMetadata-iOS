@@ -10,13 +10,12 @@ import Foundation
 import Photos
 
 /// メディアを管理するためのクラス
-class MediaLibrary: MediaLibraryManager {
-    
-    func load(localIdentifier: [String]) -> [Media] {
+public class MediaLibrary: MediaLibraryManager {
+    public func load(localIdentifier: [String]) -> [Media] {
         return []
     }
     
-    func delete(localIdentifier: [String], completion: ((Bool, Error?) -> Void)?) {
+    public func delete(localIdentifier: [String], completion: ((Bool, Error?) -> Void)?) {
         let assets = PHAsset.fetchAssets(withLocalIdentifiers: localIdentifier, options: nil)
         PHPhotoLibrary.shared().performChanges({
             PHAssetChangeRequest.deleteAssets(assets)
