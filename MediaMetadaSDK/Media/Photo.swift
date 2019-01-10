@@ -36,6 +36,12 @@ struct Photo: Media {
     }
     
     func getData(completionHandler: @escaping (Data?) -> Void) {
-
+        let options = PHImageRequestOptions()
+        options.isNetworkAccessAllowed = true
+        PHImageManager.default().requestImageData(for: asset,
+                                                  options: options,
+                                                  resultHandler: { data, str, orientation, dict in
+            completionHandler(data)
+        })
     }
 }
