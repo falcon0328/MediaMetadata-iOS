@@ -17,6 +17,9 @@ class MediaLibrary: MediaLibraryManager {
     }
     
     func delete(localIdentifier: [String], completion: ((Bool, Error?) -> Void)?) {
-        
+        let assets = PHAsset.fetchAssets(withLocalIdentifiers: localIdentifier, options: nil)
+        PHPhotoLibrary.shared().performChanges({
+            PHAssetChangeRequest.deleteAssets(assets)
+        }, completionHandler: completion)
     }
 }
