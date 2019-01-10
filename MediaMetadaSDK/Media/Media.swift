@@ -15,6 +15,9 @@ public protocol Media {
     /// カメラロール内でのローカル識別子
     var localIdentifier: String { get }
     /// ユーザが書き込んだメディアのメタデータ
+    ///
+    /// - attention:
+    /// saveメソッドが呼ばれるまでカメラロールには反映されない
     var userMetadata: [MetadataKey: Metadata] { get set }
     /// メディアのバイナリデータ
     ///
