@@ -14,8 +14,8 @@ public protocol Media {
     var type: MediaType { get }
     /// カメラロール内でのローカル識別子
     var localIdentifier: String { get }
-    /// メディアのメタデータ
-    var metadata: [MetadataKey: Metadata] { get set }
+    /// ユーザが書き込んだメディアのメタデータ
+    var userMetadata: [MetadataKey: Metadata] { get set }
     /// メディアのバイナリデータ
     ///
     /// - Parameter completionHandler: データ取得結果を得るためのハンドラメソッド
@@ -25,4 +25,19 @@ public protocol Media {
     ///
     /// - Parameter completionHandler: メタデータ取得結果を得るためのハンドラメソッド
     func getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Void)
+    /// メタデータを設定する
+    ///
+    /// - attention:
+    /// saveメソッドが呼ばれるまでカメラロールには反映されない
+    ///
+    /// - Parameters:
+    ///   - key: メタデータのキー
+    ///   - value: メタデータの値
+    mutating func setMetadata(key: MetadataKey, value: Metadata)
+}
+
+extension Media {
+    mutating func setMetadata(key: MetadataKey, value: Metadata) {
+        userMetadata[key] = value
+    }
 }

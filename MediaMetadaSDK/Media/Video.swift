@@ -19,11 +19,11 @@ struct Video: Media {
             return asset.localIdentifier
         }
     }
-    var metadata: [MetadataKey : Metadata]
+    var userMetadata: [MetadataKey : Metadata]
     
     init(asset: PHAsset, metadata: [MetadataKey : Metadata]) {
         self.asset = asset
-        self.metadata = metadata
+        self.userMetadata = metadata
     }
     
     /// イニシャライザ
