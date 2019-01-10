@@ -10,15 +10,19 @@ import Foundation
 
 /// EXIFを表す構造体
 struct EXIF: Metadata {
-    var rawValue: [MetadataKey : Any] {
+    var rawValue: [String : Any] {
         get {
             return _rawValue
         }
     }
     /// 読み書き可能なデータ
-    private var _rawValue: [MetadataKey : Any] = [:]
+    private var _rawValue: [String : Any]
     
-    mutating func write(metadataKey: MetadataKey, value: Any) -> Bool {
+    init(rawValue: [String: Any]) {
+        self._rawValue = rawValue
+    }
+    
+    mutating func write(metadataKey: String, value: Any) -> Bool {
         _rawValue[metadataKey] = value
         return true
     }
