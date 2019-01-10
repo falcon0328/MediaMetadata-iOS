@@ -38,4 +38,8 @@ struct Video: Media {
     func getData(completionHandler: @escaping (Data?) -> Void) {
         
     }
+    
+    func getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Void) {
+        
+    }
 }

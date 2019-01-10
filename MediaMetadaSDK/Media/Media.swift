@@ -20,4 +20,9 @@ public protocol Media {
     ///
     /// - Parameter completionHandler: データ取得結果を得るためのハンドラメソッド
     func getData(completionHandler: @escaping (Data?) -> Void)
+    
+    /// メディアのメタデータを取得する
+    ///
+    /// - Parameter completionHandler: メタデータ取得結果を得るためのハンドラメソッド
+    func getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Void)
 }

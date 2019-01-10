@@ -44,4 +44,29 @@ struct Photo: Media {
             completionHandler(data)
         })
     }
+    
+    func getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Void) {
+        getData(completionHandler: { data in
+            guard let data = data,
+                let ciImage = CIImage(data: data) else {
+                    return
+            }
+            var dict: [MetadataKey: Metadata] = [:]
+            let properties = ciImage.properties
+            for key in properties.keys {
+                guard let metadataKey = MetadataKey(rawValue: key),
+                    let values = properties[key] as? [String: Any] else {
+                        continue
+                }
+                switch metadataKey {
+                case .exif:
+                    let exif = EXIF(rawValue: values)
+                    dict[.exif] = exif
+                default:
+                    break
+                }
+            }
+            completionHandler(dict)
+        })
+    }
 }
