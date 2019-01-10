@@ -11,7 +11,7 @@ import Foundation
 /// メタデータを表現するためのプロトコル
 public protocol Metadata {
     /// メタデータを格納した辞書
-    var rawValue: [MetadataKey: Any] { get set }
+    var rawValue: [MetadataKey: Any] { get }
     /// メタデータの追加
     ///
     /// - Parameters:
@@ -28,11 +28,6 @@ public protocol Metadata {
 }
 
 extension Metadata {
-    mutating func write(metadataKey: MetadataKey, value: Any) -> Bool {
-        rawValue[metadataKey] = value
-        return true
-    }
-    
     func read(metadataKey: MetadataKey) -> Any? {
         return rawValue[metadataKey]
     }
