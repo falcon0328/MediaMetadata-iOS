@@ -30,4 +30,8 @@ struct Video: Media {
                   localIdentifier: localIdentifier,
                   metadata: [:])
     }
+    
+    func getData(completionHandler: @escaping (Data?) -> Void) {
+        
+    }
 }

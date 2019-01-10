@@ -16,4 +16,8 @@ public protocol Media {
     var localIdentifier: String { get }
     /// メディアのメタデータ
     var metadata: [MetadataKey: Metadata] { get set }
+    /// メディアのバイナリデータ
+    ///
+    /// - Parameter completionHandler: データ取得結果を得るためのハンドラメソッド
+    func getData(completionHandler: @escaping (Data?) -> Void)
 }
