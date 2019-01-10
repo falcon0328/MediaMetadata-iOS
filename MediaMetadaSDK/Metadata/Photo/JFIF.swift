@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+/// JFIFを表す構造体
+struct JFIF: Metadata {
+    var rawValue: [MetadataKey : Any] {
+        get {
+            return _rawValue
+        }
+    }
+    /// 読み書き可能なデータ
+    private var _rawValue: [MetadataKey : Any] = [:]
+    
+    mutating func write(metadataKey: MetadataKey, value: Any) -> Bool {
+        _rawValue[metadataKey] = value
+        return true
+    }
+}
