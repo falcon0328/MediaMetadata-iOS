@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Photos
 
 /// メディアを管理するためのプロトコル
 ///
