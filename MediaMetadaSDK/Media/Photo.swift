@@ -7,32 +7,35 @@
 //
 
 import Foundation
-
+import Photos
 
 /// 写真データ
 struct Photo: Media {
-    let type: MediaType
-    let localIdentifier: String
+    private let asset: PHAsset
+    
+    let type: MediaType = .photo
+    var localIdentifier: String {
+        get {
+            return asset.localIdentifier
+        }
+    }
     var metadata: [MetadataKey : Metadata]
     
-    init(type: MediaType, localIdentifier: String, metadata: [MetadataKey : Metadata]) {
-        self.type = type
-        self.localIdentifier = localIdentifier
+    init(asset: PHAsset, metadata: [MetadataKey : Metadata]) {
+        self.asset = asset
         self.metadata = metadata
     }
     
     /// イニシャライザ
     ///
     /// - Parameters:
-    ///   - localIdentifier: 写真のローカル識別子
-    ///   - rawData: 写真のデータ
-    init(localIdentifier: String) {
-        self.init(type: .photo,
-                  localIdentifier: localIdentifier,
+    ///   - asset: メディアのアセットデータ
+    init(asset: PHAsset) {
+        self.init(asset: asset,
                   metadata: [:])
     }
     
     func getData(completionHandler: @escaping (Data?) -> Void) {
-        
+
     }
 }
