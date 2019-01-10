@@ -12,13 +12,11 @@ import Foundation
 struct Video: Media {
     let type: MediaType
     let localIdentifier: String
-    let rawData: Data
     var metadata: [MetadataKey : Metadata]
     
-    init(type: MediaType, localIdentifier: String, rawData: Data, metadata: [MetadataKey : Metadata]) {
+    init(type: MediaType, localIdentifier: String, metadata: [MetadataKey : Metadata]) {
         self.type = type
         self.localIdentifier = localIdentifier
-        self.rawData = rawData
         self.metadata = metadata
     }
     
@@ -27,10 +25,9 @@ struct Video: Media {
     /// - Parameters:
     ///   - localIdentifier: 動画のローカル識別子
     ///   - rawData: 動画のデータ
-    init(localIdentifier: String, rawData: Data) {
+    init(localIdentifier: String) {
         self.init(type: .video,
                   localIdentifier: localIdentifier,
-                  rawData: rawData,
                   metadata: [:])
     }
 }
