@@ -11,8 +11,8 @@ import Foundation
 /// メディアを管理するためのクラス
 class MediaLibrary: MediaLibraryManager {
     
-    func load(localIdentifier: [String]) -> Media? {
-        return nil
+    func load(localIdentifier: [String]) -> [Media] {
+        return []
     }
     
     func delete(localIdentifier: [String], completion: ((Bool, Error?) -> Void)?) {
