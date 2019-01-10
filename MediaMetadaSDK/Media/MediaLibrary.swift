@@ -27,9 +27,9 @@ public class MediaLibrary: MediaLibraryManager {
             let asset = assets.object(at: index)
             switch asset.mediaType {
             case .image:
-                media = Photo(localIdentifier: asset.localIdentifier)
+                media = Photo(asset: asset)
             case .video:
-                media = Video(localIdentifier: asset.localIdentifier)
+                media = Video(asset: asset)
             case .audio:
                 fallthrough
             case .unknown:
