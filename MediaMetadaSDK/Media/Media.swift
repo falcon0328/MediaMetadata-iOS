@@ -14,8 +14,6 @@ public protocol Media {
     var type: MediaType { get }
     /// カメラロール内でのローカル識別子
     var localIdentifier: String { get }
-    /// メディアのバイトデータ
-    var rawData: Data { get }
     /// メディアのメタデータ
     var metadata: [MetadataKey: Metadata] { get set }
 }
