@@ -20,7 +20,24 @@ public class MediaLibrary: MediaLibraryManager {
     }
     
     public func load(localIdentifier: [String]) -> [Media] {
-        return []
+        let assets = PHAsset.fetchAssets(withLocalIdentifiers: localIdentifier, options: nil)
+        var medias: [Media] = []
+        for index in (0...assets.count)  {
+            var media: Media!
+            let asset = assets.object(at: index)
+            switch asset.mediaType {
+            case .image:
+                media = Photo(localIdentifier: asset.localIdentifier)
+            case .video:
+                media = Video(localIdentifier: asset.localIdentifier)
+            case .audio:
+                fallthrough
+            case .unknown:
+                break
+            }
+            medias.append(media)
+        }
+        return medias
     }
     
     public func delete(localIdentifier: [String], completion: ((Bool, Error?) -> Void)?) {
