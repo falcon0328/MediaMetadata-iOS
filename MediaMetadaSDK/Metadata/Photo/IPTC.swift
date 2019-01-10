@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// EXIFを表す構造体
+/// IPTCを表す構造体
 struct IPTC: Metadata {
     var rawValue: [MetadataKey : Any] {
         get {
