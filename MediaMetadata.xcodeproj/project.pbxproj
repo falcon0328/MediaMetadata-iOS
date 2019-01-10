@@ -29,6 +29,8 @@
 		5540AB2121E6F5A300A1A533 /* IPTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2021E6F5A300A1A533 /* IPTC.swift */; };
 		5540AB2321E6F5B200A1A533 /* JFIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2221E6F5B200A1A533 /* JFIF.swift */; };
 		5540AB2521E6F5C000A1A533 /* TIFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2421E6F5C000A1A533 /* TIFF.swift */; };
+		5540AB2821E7073200A1A533 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2721E7073200A1A533 /* Photo.swift */; };
+		5540AB2A21E7073B00A1A533 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2921E7073B00A1A533 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		5540AB2021E6F5A300A1A533 /* IPTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTC.swift; sourceTree = "<group>"; };
 		5540AB2221E6F5B200A1A533 /* JFIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFIF.swift; sourceTree = "<group>"; };
 		5540AB2421E6F5C000A1A533 /* TIFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIFF.swift; sourceTree = "<group>"; };
+		5540AB2721E7073200A1A533 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		5540AB2921E7073B00A1A533 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +243,8 @@
 				5540AB1321E2515600A1A533 /* Media.swift */,
 				5540AB1521E35DD000A1A533 /* MetadataKey.swift */,
 				5540AB1721E35DDB00A1A533 /* MediaType.swift */,
+				5540AB2721E7073200A1A533 /* Photo.swift */,
+				5540AB2921E7073B00A1A533 /* Video.swift */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -494,12 +500,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5540AB2321E6F5B200A1A533 /* JFIF.swift in Sources */,
+				5540AB2A21E7073B00A1A533 /* Video.swift in Sources */,
 				5540AB1F21E6F58600A1A533 /* EXIF.swift in Sources */,
 				5540AB1821E35DDB00A1A533 /* MediaType.swift in Sources */,
 				5540AB1021E24F8300A1A533 /* MediaLibrary.swift in Sources */,
 				5540AB1221E24FD700A1A533 /* Metadata.swift in Sources */,
 				5540AB1421E2515600A1A533 /* Media.swift in Sources */,
 				5540AB2121E6F5A300A1A533 /* IPTC.swift in Sources */,
+				5540AB2821E7073200A1A533 /* Photo.swift in Sources */,
 				5540AB0E21E24F7300A1A533 /* MediaLibraryManager.swift in Sources */,
 				5540AB2521E6F5C000A1A533 /* TIFF.swift in Sources */,
 				5540AB1621E35DD000A1A533 /* MetadataKey.swift in Sources */,
