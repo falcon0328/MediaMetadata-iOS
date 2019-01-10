@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+/// メディアを管理するためのクラス
+class MediaLibrary: MediaLibraryManager {
+    
+    func load(localIdentifier: String) -> Media? {
+        return nil
+    }
+    
+    func delete(localIdentifier: String) -> Bool {
+        return false
+    }
+}
