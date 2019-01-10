@@ -11,6 +11,14 @@ import Photos
 
 /// メディアを管理するためのクラス
 public class MediaLibrary: MediaLibraryManager {
+    private let sharedInstance = MediaLibrary()
+    
+    private init() {}
+    
+    public func shared() -> MediaLibraryManager {
+        return sharedInstance
+    }
+    
     public func load(localIdentifier: [String]) -> [Media] {
         return []
     }
