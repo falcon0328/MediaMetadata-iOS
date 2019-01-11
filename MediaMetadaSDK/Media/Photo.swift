@@ -20,10 +20,20 @@ struct Photo: Media {
         }
     }
     var userMetadata: [MetadataKey : Metadata]
+    var data: Data?
     
     init(asset: PHAsset, metadata: [MetadataKey : Metadata]) {
         self.asset = asset
         self.userMetadata = metadata
+    }
+    
+    /// データからインスタンスを生成する
+    ///
+    /// - Parameter data: メディアのデータ
+    init(data: Data) {
+        self.data = Data()
+        self.userMetadata = [:]
+        self.asset = PHAsset()
     }
     
     /// イニシャライザ
