@@ -56,27 +56,43 @@ struct Photo: Media {
     }
     
     func getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Void) {
+        if let data = self.data {
+            getMetadata(data: data, completionHandler: completionHandler)
+            return
+        }
         getData(completionHandler: { data in
-            guard let data = data,
-                let ciImage = CIImage(data: data) else {
+            guard let data = data else {
                     return
             }
-            var dict: [MetadataKey: Metadata] = [:]
-            let properties = ciImage.properties
-            for key in properties.keys {
-                guard let metadataKey = MetadataKey(rawValue: key),
-                    let values = properties[key] as? [String: Any] else {
-                        continue
-                }
-                switch metadataKey {
-                case .exif:
-                    let exif = EXIF(rawValue: values)
-                    dict[.exif] = exif
-                default:
-                    break
-                }
-            }
-            completionHandler(dict)
+            self.getMetadata(data: data, completionHandler: completionHandler)
         })
+    }
+    
+    /// データからメタデータを取得する
+    ///
+    /// - Parameters:
+    ///   - data: 画像のデータ
+    ///   - completionHandler: メタデータの取得結果を得るためのハンドラメソッド
+    func getMetadata(data: Data, completionHandler: @escaping ([MetadataKey : Metadata]) -> Void) {
+        guard let ciImage = CIImage(data: data) else {
+            completionHandler([:])
+            return
+        }
+        var dict: [MetadataKey: Metadata] = [:]
+        let properties = ciImage.properties
+        for key in properties.keys {
+            guard let metadataKey = MetadataKey(rawValue: key),
+                let values = properties[key] as? [String: Any] else {
+                    continue
+            }
+            switch metadataKey {
+            case .exif:
+                let exif = EXIF(rawValue: values)
+                dict[.exif] = exif
+            default:
+                break
+            }
+        }
+        completionHandler(dict)
     }
 }
