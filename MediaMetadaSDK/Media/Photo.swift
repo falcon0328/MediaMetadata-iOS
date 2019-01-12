@@ -93,8 +93,15 @@ struct Photo: Media {
             case .exif:
                 let exif = EXIF(rawValue: values)
                 dict[.exif] = exif
-            default:
-                break
+            case .iptc:
+                let iptc = IPTC(rawValue: values)
+                dict[.iptc] = iptc
+            case .jfif:
+                let jfif = JFIF(rawValue: values)
+                dict[.jfif] = jfif
+            case .tiff:
+                let tiff = TIFF(rawValue: values)
+                dict[.tiff] = tiff
             }
         }
         completionHandler(dict)

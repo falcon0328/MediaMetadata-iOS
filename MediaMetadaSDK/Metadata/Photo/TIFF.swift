@@ -18,6 +18,10 @@ struct TIFF: Metadata {
     /// 読み書き可能なデータ
     private var _rawValue: [String : Any] = [:]
     
+    init(rawValue: [String: Any]) {
+        self._rawValue = rawValue
+    }
+    
     mutating func write(metadataKey: String, value: Any) -> Bool {
         _rawValue[metadataKey] = value
         return true
