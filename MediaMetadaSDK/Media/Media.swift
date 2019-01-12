@@ -37,6 +37,11 @@ public protocol Media {
     ///   - key: メタデータのキー
     ///   - value: メタデータの値
     mutating func setMetadata(key: MetadataKey, value: Metadata)
+    
+    /// メタデータを含んだメディアのデータをカメラロールに保存する
+    ///
+    /// - Parameter completionHandler: 保存成否を得るためのハンドラメソッド
+    func save(completionHandler: @escaping (Bool, Error?) -> Void)
 }
 
 extension Media {
