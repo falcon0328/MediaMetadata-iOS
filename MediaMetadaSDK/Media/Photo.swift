@@ -11,8 +11,8 @@ import Photos
 import MobileCoreServices
 
 /// 写真データ
-struct Photo: Media {
-    private let asset: PHAsset
+class Photo: Media {
+    private var asset: PHAsset
     
     let type: MediaType = .photo
     var localIdentifier: String {
@@ -41,7 +41,7 @@ struct Photo: Media {
     ///
     /// - Parameters:
     ///   - asset: メディアのアセットデータ
-    init(asset: PHAsset) {
+    convenience init(asset: PHAsset) {
         self.init(asset: asset,
                   metadata: [:])
     }
@@ -133,7 +133,7 @@ struct Photo: Media {
             // TODO: エラーの内容を決めること
             return
         }
-        var localID: String = localIdentifier
+        var localID = localIdentifier
         var fileURL: URL?
         let fileName = "\(Int.random(in: 0..<100000000)).jpg"
         do {
@@ -153,7 +153,11 @@ struct Photo: Media {
                     return
                 }
                 _ = try? FileManager.default.removeItem(atPath: fileURL.absoluteString)
-                // TODO: アセットを書き換える
+                if let newAsset = PHAsset.fetchAssets(withLocalIdentifiers: [localID], options: nil).firstObject {
+                    self.asset = newAsset
+                } else {
+                    // TODO: エラーの内容を決めること
+                }
             })
         }
         // TODO: エラーの内容を決めること
