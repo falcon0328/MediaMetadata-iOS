@@ -175,7 +175,14 @@ class Photo: Media {
     /// - Parameter image: CGImage型の写真データ
     /// - Returns: メタデータ付きの写真データ
     func createImageData(image: CIImage) -> NSMutableData? {
-        let properties = image.properties
+        var properties = image.properties
+        // メタデータの書き換え処理
+        for key in userMetadata.keys {
+            guard let rawValue = userMetadata[key]?.rawValue else {
+                continue
+            }
+            properties[key.rawValue] = rawValue
+        }
         let imageData = NSMutableData()
         guard let destination = CGImageDestinationCreateWithData(imageData, kUTTypeJPEG, 1, nil),
             let createdImage = CIContext().createCGImage(image, from: image.extent) else {
