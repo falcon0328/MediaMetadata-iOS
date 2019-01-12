@@ -11,6 +11,21 @@ import XCTest
 @testable import MediaMetadaSDK
 
 class PhotoTests: XCTestCase {
+    var photoUrl: URL {
+        get {
+            return testBundle.url(forResource: "meshi", withExtension: "jpg")!
+        }
+    }
+    var photoData: Data {
+        get {
+            return try! Data(contentsOf: photoUrl)
+        }
+    }
+    var photo: Photo {
+        get {
+            return Photo(data: photoData)
+        }
+    }
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,11 +37,19 @@ class PhotoTests: XCTestCase {
     
     func test_正常系_getData_Dataを与えた場合() {
         let expectation = XCTestExpectation(description: "test_正常系_getData")
-        let photoUrl = testBundle.url(forResource: "meshi", withExtension: "jpg")!
-        let photoData = try! Data(contentsOf: photoUrl)
-        let photo = Photo(data: photoData)
         photo.getData(completionHandler: { data in
-            XCTAssertEqual(data, photoData)
+            XCTAssertEqual(data, self.photoData)
+            expectation.fulfill()
+        })
+        wait(for: [expectation], timeout: 1.0)
+    }
+    
+    func test_正常系_getMetadata_Dataを与えた場合() {
+        let expectation = XCTestExpectation(description: "test_正常系_getMetadata_Dataを与えた場合")
+        photo.getMetadata(completionHandler: { metadatas in
+            XCTAssertNotNil(metadatas[MetadataKey.exif])
+            XCTAssertNotNil(metadatas[MetadataKey.jfif])
+            XCTAssertNotNil(metadatas[MetadataKey.tiff])
             expectation.fulfill()
         })
         wait(for: [expectation], timeout: 1.0)
