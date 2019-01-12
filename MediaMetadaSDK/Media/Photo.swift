@@ -133,12 +133,30 @@ struct Photo: Media {
             // TODO: エラーの内容を決めること
             return
         }
+        var localID: String = localIdentifier
+        var fileURL: URL?
         let fileName = "\(Int.random(in: 0..<100000000)).jpg"
         do {
-            try createFileToTemporaryDirectory(fileName: fileName, data: imageData as Data)
+            fileURL = try createFileToTemporaryDirectory(fileName: fileName, data: imageData as Data)
         } catch {
             // TODO: エラーの内容を決めること
         }
+        if let fileURL = fileURL {
+            PHPhotoLibrary.shared().performChanges({
+                let request = PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: fileURL)
+                if let localIdentifier = request?.placeholderForCreatedAsset?.localIdentifier {
+                    localID = localIdentifier
+                }
+            }, completionHandler: { isSuccess, error in
+                if !isSuccess {
+                    // TODO: エラーの内容を決めること
+                    return
+                }
+                _ = try? FileManager.default.removeItem(atPath: fileURL.absoluteString)
+                // TODO: アセットを書き換える
+            })
+        }
+        // TODO: エラーの内容を決めること
     }
     
     /// CGImageをメタデータ付きの写真データに変換する
@@ -165,11 +183,12 @@ struct Photo: Media {
     ///   - fileName: ファイル名
     ///   - data: ファイルとして保存するデータ
     /// - Throws: ファイルが保存できなった場合のエラー
-    func createFileToTemporaryDirectory(fileName: String, data: Data) throws {
+    func createFileToTemporaryDirectory(fileName: String, data: Data) throws -> URL {
         let filePath = "\(NSTemporaryDirectory())\(fileName)"
         let fileURL = URL(fileURLWithPath: filePath)
         do {
             try data.write(to: fileURL, options: .atomic)
+            return fileURL
         } catch {
             throw error
         }
