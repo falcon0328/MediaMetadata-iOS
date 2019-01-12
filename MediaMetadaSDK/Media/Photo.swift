@@ -8,6 +8,7 @@
 
 import Foundation
 import Photos
+import MobileCoreServices
 
 /// 写真データ
 struct Photo: Media {
@@ -127,6 +128,28 @@ struct Photo: Media {
     ///   - data: 写真データ
     ///   - completionHandler: 画像データの保存成否を取得するためのハンドラメソッド
     func save(data: Data, completionHandler: @escaping (Bool, Error?) -> Void) {
-        
+        guard let image = CIImage(data: data),
+            let imageData = createImageData(image: image) else {
+            // TODO: エラーの内容を決めること
+            return
+        }
+    }
+    
+    /// CGImageをメタデータ付きの写真データに変換する
+    ///
+    /// - Parameter image: CGImage型の写真データ
+    /// - Returns: メタデータ付きの写真データ
+    func createImageData(image: CIImage) -> NSMutableData? {
+        let properties = image.properties
+        let imageData = NSMutableData()
+        guard let destination = CGImageDestinationCreateWithData(imageData, kUTTypeJPEG, 1, nil),
+            let createdImage = CIContext().createCGImage(image, from: image.extent) else {
+            return nil
+        }
+        CGImageDestinationAddImage(destination,
+                                   createdImage,
+                                   properties as CFDictionary)
+        CGImageDestinationFinalize(destination)
+        return imageData
     }
 }
