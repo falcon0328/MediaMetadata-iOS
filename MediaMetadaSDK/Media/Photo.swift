@@ -31,7 +31,7 @@ struct Photo: Media {
     ///
     /// - Parameter data: メディアのデータ
     init(data: Data) {
-        self.data = Data()
+        self.data = data
         self.userMetadata = [:]
         self.asset = PHAsset()
     }
