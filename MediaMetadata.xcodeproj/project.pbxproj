@@ -31,6 +31,8 @@
 		5540AB2521E6F5C000A1A533 /* TIFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2421E6F5C000A1A533 /* TIFF.swift */; };
 		5540AB2821E7073200A1A533 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2721E7073200A1A533 /* Photo.swift */; };
 		5540AB2A21E7073B00A1A533 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2921E7073B00A1A533 /* Video.swift */; };
+		5540AB3021E9E19F00A1A533 /* meshi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5540AB2F21E9E19F00A1A533 /* meshi.jpg */; };
+		5540AB3221E9E3DB00A1A533 /* XCTestcase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB3121E9E3DB00A1A533 /* XCTestcase+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		5540AB2421E6F5C000A1A533 /* TIFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIFF.swift; sourceTree = "<group>"; };
 		5540AB2721E7073200A1A533 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		5540AB2921E7073B00A1A533 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		5540AB2F21E9E19F00A1A533 /* meshi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meshi.jpg; sourceTree = "<group>"; };
+		5540AB3121E9E3DB00A1A533 /* XCTestcase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestcase+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,8 +233,10 @@
 		5540AAFA21E22C3C00A1A533 /* MediaMetadaSDKTests */ = {
 			isa = PBXGroup;
 			children = (
+				5540AB2F21E9E19F00A1A533 /* meshi.jpg */,
 				5540AAFB21E22C3C00A1A533 /* MediaMetadaSDKTests.swift */,
 				5540AAFD21E22C3C00A1A533 /* Info.plist */,
+				5540AB3121E9E3DB00A1A533 /* XCTestcase+Extension.swift */,
 			);
 			path = MediaMetadaSDKTests;
 			sourceTree = "<group>";
@@ -464,6 +470,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5540AB3021E9E19F00A1A533 /* meshi.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5540AB3221E9E3DB00A1A533 /* XCTestcase+Extension.swift in Sources */,
 				5540AAFC21E22C3C00A1A533 /* MediaMetadaSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
