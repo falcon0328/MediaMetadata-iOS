@@ -133,6 +133,11 @@ struct Photo: Media {
             // TODO: エラーの内容を決めること
             return
         }
+        do {
+            try createFileToTemporaryDirectory(fileName: "\(UUID().uuidString).jpg", data: imageData as Data)
+        } catch {
+            // TODO: エラーの内容を決めること
+        }
     }
     
     /// CGImageをメタデータ付きの写真データに変換する
@@ -151,5 +156,21 @@ struct Photo: Media {
                                    properties as CFDictionary)
         CGImageDestinationFinalize(destination)
         return imageData
+    }
+    
+    /// ファイルをTemporary領域に保存する
+    ///
+    /// - Parameters:
+    ///   - fileName: ファイル名
+    ///   - data: ファイルとして保存するデータ
+    /// - Throws: ファイルが保存できなった場合のエラー
+    func createFileToTemporaryDirectory(fileName: String, data: Data) throws {
+        let filePath = "\(NSTemporaryDirectory())\(fileName)"
+        let fileURL = URL(fileURLWithPath: filePath)
+        do {
+            try data.write(to: fileURL, options: .atomic)
+        } catch {
+            throw error
+        }
     }
 }
