@@ -133,8 +133,9 @@ struct Photo: Media {
             // TODO: エラーの内容を決めること
             return
         }
+        let fileName = "\(Int.random(in: 0..<100000000)).jpg"
         do {
-            try createFileToTemporaryDirectory(fileName: "\(Int.random(in: 0..<100000000)).jpg", data: imageData as Data)
+            try createFileToTemporaryDirectory(fileName: fileName, data: imageData as Data)
         } catch {
             // TODO: エラーの内容を決めること
         }
