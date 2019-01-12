@@ -67,7 +67,8 @@ class Photo: Media {
         }
         getData(completionHandler: { data in
             guard let data = data else {
-                    return
+                completionHandler([:])
+                return
             }
             self.getMetadata(data: data, completionHandler: completionHandler)
         })
@@ -118,6 +119,7 @@ class Photo: Media {
                 self.save(data: data, completionHandler: completionHandler)
             } else {
                 // TODO: エラーの内容を決めること
+                completionHandler(false, nil)
             }
         })
     }
@@ -140,6 +142,7 @@ class Photo: Media {
             fileURL = try createFileToTemporaryDirectory(fileName: fileName, data: imageData as Data)
         } catch {
             // TODO: エラーの内容を決めること
+            completionHandler(false, nil)
         }
         if let fileURL = fileURL {
             PHPhotoLibrary.shared().performChanges({
@@ -150,6 +153,7 @@ class Photo: Media {
             }, completionHandler: { isSuccess, error in
                 if !isSuccess {
                     // TODO: エラーの内容を決めること
+                    completionHandler(false, nil)
                     return
                 }
                 _ = try? FileManager.default.removeItem(atPath: fileURL.absoluteString)
@@ -157,7 +161,10 @@ class Photo: Media {
                     self.asset = newAsset
                 } else {
                     // TODO: エラーの内容を決めること
+                    completionHandler(false, nil)
                 }
+                self.userMetadata = [:]
+                completionHandler(true, nil)
             })
         }
         // TODO: エラーの内容を決めること
