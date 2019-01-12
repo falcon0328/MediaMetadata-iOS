@@ -106,4 +106,8 @@ struct Photo: Media {
         }
         completionHandler(dict)
     }
+    
+    func save(completionHandler: @escaping (Bool, Error?) -> Void) {
+        
+    }
 }

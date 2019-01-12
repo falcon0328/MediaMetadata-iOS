@@ -42,4 +42,8 @@ struct Video: Media {
     func getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Void) {
         
     }
+    
+    func save(completionHandler: @escaping (Bool, Error?) -> Void) {
+        
+    }
 }
