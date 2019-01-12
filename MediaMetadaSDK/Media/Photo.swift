@@ -108,6 +108,25 @@ struct Photo: Media {
     }
     
     func save(completionHandler: @escaping (Bool, Error?) -> Void) {
+        if let data = self.data {
+            save(data: data, completionHandler: completionHandler)
+            return
+        }
+        getData(completionHandler: { data in
+            if let data = data {
+                self.save(data: data, completionHandler: completionHandler)
+            } else {
+                // TODO: エラーの内容を決めること
+            }
+        })
+    }
+    
+    /// 写真データをメタデータ付きでカメラロールに保存する
+    ///
+    /// - Parameters:
+    ///   - data: 写真データ
+    ///   - completionHandler: 画像データの保存成否を取得するためのハンドラメソッド
+    func save(data: Data, completionHandler: @escaping (Bool, Error?) -> Void) {
         
     }
 }
