@@ -13,9 +13,9 @@ public enum MetadataKey: String {
     /// EXIF
     case exif = "{Exif}"
     /// IPTC
-    case iptc = "{Iptc}"
+    case iptc = "{IPTC}"
     /// JFIF
-    case jfif = "{Jfif}"
+    case jfif = "{JFIF}"
     /// TIFF
-    case tiff = "{Tiff}"
+    case tiff = "{TIFF}"
 }
