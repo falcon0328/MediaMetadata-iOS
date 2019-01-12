@@ -134,7 +134,7 @@ struct Photo: Media {
             return
         }
         do {
-            try createFileToTemporaryDirectory(fileName: "\(UUID().uuidString).jpg", data: imageData as Data)
+            try createFileToTemporaryDirectory(fileName: "\(Int.random(in: 0..<100000000)).jpg", data: imageData as Data)
         } catch {
             // TODO: エラーの内容を決めること
         }
