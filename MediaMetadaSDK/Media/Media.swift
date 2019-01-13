@@ -49,3 +49,9 @@ extension Media {
         userMetadata[key] = value
     }
 }
+
+extension Array where Element == Media {
+    public func object(index: Int) -> Media {
+        return self[index]
+    }
+}
