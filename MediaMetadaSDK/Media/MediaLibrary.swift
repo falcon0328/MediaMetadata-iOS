@@ -38,9 +38,9 @@ public class MediaLibrary: MediaLibraryManager {
         return medias
     }
     
-    public func delete(assets: PHFetchResult<PHAsset>, completion: ((Bool, Error?) -> Void)?) {
+    public func delete(assets: PHFetchResult<PHAsset>, completionHandler: ((Bool, Error?) -> Void)?) {
         PHPhotoLibrary.shared().performChanges({
             PHAssetChangeRequest.deleteAssets(assets)
-        }, completionHandler: completion)
+        }, completionHandler: completionHandler)
     }
 }

@@ -23,5 +23,5 @@ public protocol MediaLibraryManager {
     ///
     /// - Parameter localIdentifier: カメラロールでのローカル識別子
     /// - Returns: 削除の成否
-    func delete(assets: PHFetchResult<PHAsset>, completion: ((Bool, Error?) -> Void)?)
+    func delete(assets: PHFetchResult<PHAsset>, completionHandler: ((Bool, Error?) -> Void)?)
 }
