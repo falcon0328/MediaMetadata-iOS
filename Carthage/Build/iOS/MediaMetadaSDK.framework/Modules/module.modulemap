@@ -1,0 +1,11 @@
+framework module MediaMetadaSDK {
+  umbrella header "MediaMetadaSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module MediaMetadaSDK.Swift {
+    header "MediaMetadaSDK-Swift.h"
+    requires objc
+}
