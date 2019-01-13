@@ -9,8 +9,8 @@
 import Foundation
 
 /// TIFFを表す構造体
-struct TIFF: Metadata {
-    var rawValue: [String : Any] {
+public struct TIFF: Metadata {
+    public var rawValue: [String : Any] {
         get {
             return _rawValue
         }
@@ -22,7 +22,11 @@ struct TIFF: Metadata {
         self._rawValue = rawValue
     }
     
-    mutating func write(metadataKey: String, value: Any) -> Bool {
+    public func read(metadataKey: String) -> Any? {
+        return rawValue[metadataKey]
+    }
+    
+    public mutating func write(metadataKey: String, value: Any) -> Bool {
         _rawValue[metadataKey] = value
         return true
     }

@@ -26,9 +26,3 @@ public protocol Metadata {
     /// - Returns: 指定したキー値を持つメタデータ
     func read(metadataKey: String) -> Any?
 }
-
-extension Metadata {
-    func read(metadataKey: String) -> Any? {
-        return rawValue[metadataKey]
-    }
-}

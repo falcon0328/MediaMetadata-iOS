@@ -9,8 +9,8 @@
 import Foundation
 
 /// IPTCを表す構造体
-struct IPTC: Metadata {
-    var rawValue: [String : Any] {
+public struct IPTC: Metadata {
+    public var rawValue: [String : Any] {
         get {
             return _rawValue
         }
@@ -22,7 +22,11 @@ struct IPTC: Metadata {
         self._rawValue = rawValue
     }
     
-    mutating func write(metadataKey: String, value: Any) -> Bool {
+    public func read(metadataKey: String) -> Any? {
+        return rawValue[metadataKey]
+    }
+    
+    public mutating func write(metadataKey: String, value: Any) -> Bool {
         _rawValue[metadataKey] = value
         return true
     }

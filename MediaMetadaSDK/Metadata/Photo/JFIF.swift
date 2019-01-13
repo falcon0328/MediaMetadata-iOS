@@ -22,7 +22,11 @@ struct JFIF: Metadata {
         self._rawValue = rawValue
     }
     
-    mutating func write(metadataKey: String, value: Any) -> Bool {
+    public func read(metadataKey: String) -> Any? {
+        return rawValue[metadataKey]
+    }
+    
+    public mutating func write(metadataKey: String, value: Any) -> Bool {
         _rawValue[metadataKey] = value
         return true
     }
