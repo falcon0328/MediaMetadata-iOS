@@ -19,8 +19,7 @@ public class MediaLibrary: MediaLibraryManager {
         return sharedInstance
     }
     
-    public func load(localIdentifier: [String]) -> [Media] {
-        let assets = PHAsset.fetchAssets(withLocalIdentifiers: localIdentifier, options: nil)
+    public func load(assets: PHFetchResult<PHAsset>) -> [Media] {
         var medias: [Media] = []
         assets.enumerateObjects({ asset, index, pointer in
             var media: Media!
@@ -39,8 +38,7 @@ public class MediaLibrary: MediaLibraryManager {
         return medias
     }
     
-    public func delete(localIdentifier: [String], completion: ((Bool, Error?) -> Void)?) {
-        let assets = PHAsset.fetchAssets(withLocalIdentifiers: localIdentifier, options: nil)
+    public func delete(assets: PHFetchResult<PHAsset>, completion: ((Bool, Error?) -> Void)?) {
         PHPhotoLibrary.shared().performChanges({
             PHAssetChangeRequest.deleteAssets(assets)
         }, completionHandler: completion)

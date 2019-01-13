@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Photos
 
 /// メディアを管理するためのプロトコル
 ///
@@ -17,10 +18,10 @@ public protocol MediaLibraryManager {
     ///
     /// - Parameter localIdentifier: カメラロールでのローカル識別子
     /// - Returns: 該当するメディア
-    func load(localIdentifier: [String]) -> [Media]
+    func load(assets: PHFetchResult<PHAsset>) -> [Media]
     /// メディアの削除
     ///
     /// - Parameter localIdentifier: カメラロールでのローカル識別子
     /// - Returns: 削除の成否
-    func delete(localIdentifier: [String], completion: ((Bool, Error?) -> Void)?)
+    func delete(assets: PHFetchResult<PHAsset>, completion: ((Bool, Error?) -> Void)?)
 }
