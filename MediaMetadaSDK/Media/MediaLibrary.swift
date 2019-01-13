@@ -22,9 +22,8 @@ public class MediaLibrary: MediaLibraryManager {
     public func load(localIdentifier: [String]) -> [Media] {
         let assets = PHAsset.fetchAssets(withLocalIdentifiers: localIdentifier, options: nil)
         var medias: [Media] = []
-        for index in (0...assets.count)  {
+        assets.enumerateObjects({ asset, index, pointer in
             var media: Media!
-            let asset = assets.object(at: index)
             switch asset.mediaType {
             case .image:
                 media = Photo(asset: asset)
@@ -36,7 +35,7 @@ public class MediaLibrary: MediaLibraryManager {
                 break
             }
             medias.append(media)
-        }
+        })
         return medias
     }
     
