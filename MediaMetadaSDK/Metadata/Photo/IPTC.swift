@@ -18,7 +18,7 @@ public struct IPTC: Metadata {
     /// 読み書き可能なデータ
     private var _rawValue: [String : Any] = [:]
     
-    init(rawValue: [String: Any]) {
+    public init(rawValue: [String: Any]) {
         self._rawValue = rawValue
     }
     
