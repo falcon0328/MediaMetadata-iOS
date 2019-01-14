@@ -34,6 +34,7 @@
 		5540AB3021E9E19F00A1A533 /* meshi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5540AB2F21E9E19F00A1A533 /* meshi.jpg */; };
 		5540AB3221E9E3DB00A1A533 /* XCTestcase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB3121E9E3DB00A1A533 /* XCTestcase+Extension.swift */; };
 		5540AB3421E9E53900A1A533 /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB3321E9E53900A1A533 /* PhotoTests.swift */; };
+		5540AB3A21EC205E00A1A533 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB3921EC205E00A1A533 /* Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		5540AB2F21E9E19F00A1A533 /* meshi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meshi.jpg; sourceTree = "<group>"; };
 		5540AB3121E9E3DB00A1A533 /* XCTestcase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestcase+Extension.swift"; sourceTree = "<group>"; };
 		5540AB3321E9E53900A1A533 /* PhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
+		5540AB3921EC205E00A1A533 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 				5540AB1721E35DDB00A1A533 /* MediaType.swift */,
 				5540AB2721E7073200A1A533 /* Photo.swift */,
 				5540AB2921E7073B00A1A533 /* Video.swift */,
+				5540AB3921EC205E00A1A533 /* Audio.swift */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				5540AB1021E24F8300A1A533 /* MediaLibrary.swift in Sources */,
 				5540AB1221E24FD700A1A533 /* Metadata.swift in Sources */,
 				5540AB1421E2515600A1A533 /* Media.swift in Sources */,
+				5540AB3A21EC205E00A1A533 /* Audio.swift in Sources */,
 				5540AB2121E6F5A300A1A533 /* IPTC.swift in Sources */,
 				5540AB2821E7073200A1A533 /* Photo.swift in Sources */,
 				5540AB0E21E24F7300A1A533 /* MediaLibraryManager.swift in Sources */,

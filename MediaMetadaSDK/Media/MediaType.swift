@@ -14,4 +14,6 @@ public enum MediaType: Int {
     case photo = 0
     /// 動画
     case video = 1
+    /// 音声
+    case audio = 2
 }
