@@ -18,3 +18,6 @@ iOS端末上の写真や動画に対して、簡単にメタデータを付与�
 
 ## クラス図
 ![クラス図](https://github.com/falcon0328/MediaMetadata-iOS/blob/develop/MediaMetadata-class.png)
+
+## LICENSE
+本SDKは MIT LICENSE です。詳細は[MIT License](LICENSE)を参照ください。
