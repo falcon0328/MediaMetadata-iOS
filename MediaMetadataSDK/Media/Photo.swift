@@ -95,6 +95,9 @@ class Photo: Media {
             case .exif:
                 let exif = EXIF(rawValue: values)
                 dict[.exif] = exif
+            case .gps:
+                let gps = GPS(rawValue: values)
+                dict[.gps] = gps
             case .iptc:
                 let iptc = IPTC(rawValue: values)
                 dict[.iptc] = iptc

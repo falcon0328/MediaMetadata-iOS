@@ -12,6 +12,8 @@ import Foundation
 public enum MetadataKey: String {
     /// EXIF
     case exif = "{Exif}"
+    /// GPS
+    case gps = "{GPS}"
     /// IPTC
     case iptc = "{IPTC}"
     /// JFIF
