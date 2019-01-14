@@ -54,4 +54,16 @@ class PhotoTests: XCTestCase {
         })
         wait(for: [expectation], timeout: 1.0)
     }
+    
+    func test_正常系_getMetadata_Dataを与えた場合_GPS付き() {
+        let expectation = XCTestExpectation(description: "test_正常系_getMetadata_Dataを与えた場合_GPS付き")
+        let pancakePhotoUrl = testBundle.url(forResource: "pancake",
+                                       withExtension: "jpg")!
+        let pancakePhotoData = try! Data(contentsOf: pancakePhotoUrl)
+        let pancakePhoto = Photo(data: pancakePhotoData)
+        pancakePhoto.getMetadata(completionHandler: { metadatas in
+            XCTAssertNotNil(metadatas[.gps])
+            expectation.fulfill()
+        })
+    }
 }
