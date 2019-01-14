@@ -29,5 +29,12 @@ github "falcon0328/MediaMetadata-iOS"
 
 ![クラス図](https://github.com/falcon0328/MediaMetadata-iOS/blob/develop/MediaMetadata-class.png)
 
-## LICENSE
+## ライセンス
 `MediaMetada-iOS`は MIT LICENSE です。詳細は[MIT License](LICENSE)を参照ください。
+
+## クレジット
+`MediaMetadata-iOS` は　[Falcon Tech](https://falcon-tech.connpass.com)の活動で作成されています。PRやご要望（Issue）もお待ちしております。
+
+## FAQ
+### Q＆Aの仕方
+Issueを新規作成して、メンションをつけていただければ回答させていただきます。
