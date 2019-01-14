@@ -29,3 +29,13 @@ public struct MediaMetadataError: Error {
     /// エラーコード
     public let code: Int
 }
+
+/// MediaMetadaSDKのエラーを生成する
+///
+/// - Parameters:
+///   - domain: エラーのドメイン
+///   - code: エラーコード
+/// - Returns: MediaMetadataSDKのエラーコード
+func createMediaMetadaSDKError(code: Int) -> Error {
+    return MediaMetadataError(domain: MediaMetadataErrorDomain, code: code)
+}
