@@ -118,8 +118,7 @@ class Photo: Media {
             if let data = data {
                 self.save(data: data, completionHandler: completionHandler)
             } else {
-                // TODO: エラーの内容を決めること
-                completionHandler(false, nil)
+                completionHandler(false, createMediaMetadaSDKError(code: MediaMetadataErrorBadPhotoData))
             }
         })
     }
@@ -132,17 +131,17 @@ class Photo: Media {
     func save(data: Data, completionHandler: @escaping (Bool, Error?) -> Void) {
         guard let image = CIImage(data: data),
             let imageData = createImageData(image: image) else {
-            // TODO: エラーの内容を決めること
+            completionHandler(false, createMediaMetadaSDKError(code: MediaMetadataErrorCannotCreateImageData))
             return
         }
         var localID = localIdentifier
-        var fileURL: URL?
+        var fileURL: URL!
         let fileName = "\(Int.random(in: 0..<100000000)).jpg"
         do {
             fileURL = try createFileToTemporaryDirectory(fileName: fileName, data: imageData as Data)
         } catch {
-            // TODO: エラーの内容を決めること
-            completionHandler(false, nil)
+            completionHandler(false, createMediaMetadaSDKError(code: MediaMetadataErrorCannotCreatePhotoFile))
+            return
         }
         if let fileURL = fileURL {
             PHPhotoLibrary.shared().performChanges({
@@ -152,22 +151,20 @@ class Photo: Media {
                 }
             }, completionHandler: { isSuccess, error in
                 if !isSuccess {
-                    // TODO: エラーの内容を決めること
-                    completionHandler(false, nil)
+                    completionHandler(false, createMediaMetadaSDKError(code: MediaMetadataErrorCannotCreatePhotoAsset))
                     return
                 }
                 _ = try? FileManager.default.removeItem(atPath: fileURL.absoluteString)
                 if let newAsset = PHAsset.fetchAssets(withLocalIdentifiers: [localID], options: nil).firstObject {
                     self.asset = newAsset
                 } else {
-                    // TODO: エラーの内容を決めること
-                    completionHandler(false, nil)
+                    completionHandler(false, createMediaMetadaSDKError(code: MediaMetadataErrorCannotUpdatePhotoAsset))
+                    return
                 }
                 self.userMetadata = [:]
                 completionHandler(true, nil)
             })
         }
-        // TODO: エラーの内容を決めること
     }
     
     /// CGImageをメタデータ付きの写真データに変換する
