@@ -8,7 +8,7 @@
 
 import Foundation
 import XCTest
-@testable import MediaMetadaSDK
+@testable import MediaMetadataSDK
 
 class PhotoTests: XCTestCase {
     var photoUrl: URL {

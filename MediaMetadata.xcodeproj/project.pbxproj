@@ -14,28 +14,28 @@
 		5540AAC421E1C6E400A1A533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5540AAC221E1C6E400A1A533 /* LaunchScreen.storyboard */; };
 		5540AACF21E1C6E400A1A533 /* MediaMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AACE21E1C6E400A1A533 /* MediaMetadataTests.swift */; };
 		5540AADA21E1C6E400A1A533 /* MediaMetadataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AAD921E1C6E400A1A533 /* MediaMetadataUITests.swift */; };
-		5540AAF521E22C3C00A1A533 /* MediaMetadaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */; };
-		5540AAFC21E22C3C00A1A533 /* MediaMetadaSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AAFB21E22C3C00A1A533 /* MediaMetadaSDKTests.swift */; };
-		5540AAFE21E22C3C00A1A533 /* MediaMetadaSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5540AAEE21E22C3C00A1A533 /* MediaMetadaSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5540AB0121E22C3C00A1A533 /* MediaMetadaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */; };
-		5540AB0221E22C3C00A1A533 /* MediaMetadaSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5540AB0E21E24F7300A1A533 /* MediaLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB0D21E24F7300A1A533 /* MediaLibraryManager.swift */; };
-		5540AB1021E24F8300A1A533 /* MediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB0F21E24F8300A1A533 /* MediaLibrary.swift */; };
-		5540AB1221E24FD700A1A533 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB1121E24FD700A1A533 /* Metadata.swift */; };
-		5540AB1421E2515600A1A533 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB1321E2515600A1A533 /* Media.swift */; };
-		5540AB1621E35DD000A1A533 /* MetadataKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB1521E35DD000A1A533 /* MetadataKey.swift */; };
-		5540AB1821E35DDB00A1A533 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB1721E35DDB00A1A533 /* MediaType.swift */; };
-		5540AB1F21E6F58600A1A533 /* EXIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB1E21E6F58600A1A533 /* EXIF.swift */; };
-		5540AB2121E6F5A300A1A533 /* IPTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2021E6F5A300A1A533 /* IPTC.swift */; };
-		5540AB2321E6F5B200A1A533 /* JFIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2221E6F5B200A1A533 /* JFIF.swift */; };
-		5540AB2521E6F5C000A1A533 /* TIFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2421E6F5C000A1A533 /* TIFF.swift */; };
-		5540AB2821E7073200A1A533 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2721E7073200A1A533 /* Photo.swift */; };
-		5540AB2A21E7073B00A1A533 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB2921E7073B00A1A533 /* Video.swift */; };
-		5540AB3021E9E19F00A1A533 /* meshi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5540AB2F21E9E19F00A1A533 /* meshi.jpg */; };
-		5540AB3221E9E3DB00A1A533 /* XCTestcase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB3121E9E3DB00A1A533 /* XCTestcase+Extension.swift */; };
-		5540AB3421E9E53900A1A533 /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB3321E9E53900A1A533 /* PhotoTests.swift */; };
-		5540AB3A21EC205E00A1A533 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB3921EC205E00A1A533 /* Audio.swift */; };
-		5540AB3C21EC2C6400A1A533 /* MediaMetadataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB3B21EC2C6400A1A533 /* MediaMetadataError.swift */; };
+		5540AB4D21ECBFDC00A1A533 /* MediaMetadataSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5540AB4421ECBFDC00A1A533 /* MediaMetadataSDK.framework */; };
+		5540AB5421ECBFDC00A1A533 /* MediaMetadataSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB5321ECBFDC00A1A533 /* MediaMetadataSDKTests.swift */; };
+		5540AB5621ECBFDC00A1A533 /* MediaMetadataSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5540AB4621ECBFDC00A1A533 /* MediaMetadataSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5540AB5921ECBFDC00A1A533 /* MediaMetadataSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5540AB4421ECBFDC00A1A533 /* MediaMetadataSDK.framework */; };
+		5540AB5A21ECBFDC00A1A533 /* MediaMetadataSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5540AB4421ECBFDC00A1A533 /* MediaMetadataSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5540AB7421ECC02B00A1A533 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB6321ECC02A00A1A533 /* MediaType.swift */; };
+		5540AB7521ECC02B00A1A533 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB6421ECC02A00A1A533 /* Photo.swift */; };
+		5540AB7621ECC02B00A1A533 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB6521ECC02A00A1A533 /* Media.swift */; };
+		5540AB7721ECC02B00A1A533 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB6621ECC02A00A1A533 /* Audio.swift */; };
+		5540AB7821ECC02B00A1A533 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB6721ECC02A00A1A533 /* Video.swift */; };
+		5540AB7921ECC02B00A1A533 /* MediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB6821ECC02A00A1A533 /* MediaLibrary.swift */; };
+		5540AB7A21ECC02B00A1A533 /* MediaLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB6921ECC02A00A1A533 /* MediaLibraryManager.swift */; };
+		5540AB7B21ECC02B00A1A533 /* MetadataKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB6A21ECC02A00A1A533 /* MetadataKey.swift */; };
+		5540AB7C21ECC02B00A1A533 /* MediaMetadataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB6C21ECC02A00A1A533 /* MediaMetadataError.swift */; };
+		5540AB7D21ECC02B00A1A533 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB6E21ECC02A00A1A533 /* Metadata.swift */; };
+		5540AB7E21ECC02B00A1A533 /* EXIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB7021ECC02A00A1A533 /* EXIF.swift */; };
+		5540AB7F21ECC02B00A1A533 /* IPTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB7121ECC02A00A1A533 /* IPTC.swift */; };
+		5540AB8021ECC02B00A1A533 /* TIFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB7221ECC02A00A1A533 /* TIFF.swift */; };
+		5540AB8121ECC02B00A1A533 /* JFIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB7321ECC02A00A1A533 /* JFIF.swift */; };
+		5540AB8521ECC07700A1A533 /* XCTestcase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB8221ECC07600A1A533 /* XCTestcase+Extension.swift */; };
+		5540AB8621ECC07700A1A533 /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AB8321ECC07700A1A533 /* PhotoTests.swift */; };
+		5540AB8721ECC07700A1A533 /* meshi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5540AB8421ECC07700A1A533 /* meshi.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,37 +53,37 @@
 			remoteGlobalIDString = 5540AAB521E1C6E000A1A533;
 			remoteInfo = MediaMetadata;
 		};
-		5540AAF621E22C3C00A1A533 /* PBXContainerItemProxy */ = {
+		5540AB4E21ECBFDC00A1A533 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5540AAAE21E1C6E000A1A533 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5540AAEB21E22C3C00A1A533;
-			remoteInfo = MediaMetadaSDK;
+			remoteGlobalIDString = 5540AB4321ECBFDC00A1A533;
+			remoteInfo = MediaMetadataSDK;
 		};
-		5540AAF821E22C3C00A1A533 /* PBXContainerItemProxy */ = {
+		5540AB5021ECBFDC00A1A533 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5540AAAE21E1C6E000A1A533 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5540AAB521E1C6E000A1A533;
 			remoteInfo = MediaMetadata;
 		};
-		5540AAFF21E22C3C00A1A533 /* PBXContainerItemProxy */ = {
+		5540AB5721ECBFDC00A1A533 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5540AAAE21E1C6E000A1A533 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5540AAEB21E22C3C00A1A533;
-			remoteInfo = MediaMetadaSDK;
+			remoteGlobalIDString = 5540AB4321ECBFDC00A1A533;
+			remoteInfo = MediaMetadataSDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5540AB0621E22C3C00A1A533 /* Embed Frameworks */ = {
+		5540AB5E21ECBFDC00A1A533 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5540AB0221E22C3C00A1A533 /* MediaMetadaSDK.framework in Embed Frameworks */,
+				5540AB5A21ECBFDC00A1A533 /* MediaMetadataSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,29 +104,29 @@
 		5540AAD521E1C6E400A1A533 /* MediaMetadataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMetadataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5540AAD921E1C6E400A1A533 /* MediaMetadataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMetadataUITests.swift; sourceTree = "<group>"; };
 		5540AADB21E1C6E400A1A533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MediaMetadaSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5540AAEE21E22C3C00A1A533 /* MediaMetadaSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaMetadaSDK.h; sourceTree = "<group>"; };
-		5540AAEF21E22C3C00A1A533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5540AAF421E22C3C00A1A533 /* MediaMetadaSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMetadaSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5540AAFB21E22C3C00A1A533 /* MediaMetadaSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMetadaSDKTests.swift; sourceTree = "<group>"; };
-		5540AAFD21E22C3C00A1A533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5540AB0D21E24F7300A1A533 /* MediaLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryManager.swift; sourceTree = "<group>"; };
-		5540AB0F21E24F8300A1A533 /* MediaLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibrary.swift; sourceTree = "<group>"; };
-		5540AB1121E24FD700A1A533 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
-		5540AB1321E2515600A1A533 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
-		5540AB1521E35DD000A1A533 /* MetadataKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataKey.swift; sourceTree = "<group>"; };
-		5540AB1721E35DDB00A1A533 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
-		5540AB1E21E6F58600A1A533 /* EXIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXIF.swift; sourceTree = "<group>"; };
-		5540AB2021E6F5A300A1A533 /* IPTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTC.swift; sourceTree = "<group>"; };
-		5540AB2221E6F5B200A1A533 /* JFIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFIF.swift; sourceTree = "<group>"; };
-		5540AB2421E6F5C000A1A533 /* TIFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIFF.swift; sourceTree = "<group>"; };
-		5540AB2721E7073200A1A533 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		5540AB2921E7073B00A1A533 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		5540AB2F21E9E19F00A1A533 /* meshi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meshi.jpg; sourceTree = "<group>"; };
-		5540AB3121E9E3DB00A1A533 /* XCTestcase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestcase+Extension.swift"; sourceTree = "<group>"; };
-		5540AB3321E9E53900A1A533 /* PhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
-		5540AB3921EC205E00A1A533 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
-		5540AB3B21EC2C6400A1A533 /* MediaMetadataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMetadataError.swift; sourceTree = "<group>"; };
+		5540AB4421ECBFDC00A1A533 /* MediaMetadataSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MediaMetadataSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5540AB4621ECBFDC00A1A533 /* MediaMetadataSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaMetadataSDK.h; sourceTree = "<group>"; };
+		5540AB4721ECBFDC00A1A533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5540AB4C21ECBFDC00A1A533 /* MediaMetadataSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMetadataSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5540AB5321ECBFDC00A1A533 /* MediaMetadataSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMetadataSDKTests.swift; sourceTree = "<group>"; };
+		5540AB5521ECBFDC00A1A533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5540AB6321ECC02A00A1A533 /* MediaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		5540AB6421ECC02A00A1A533 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		5540AB6521ECC02A00A1A533 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		5540AB6621ECC02A00A1A533 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		5540AB6721ECC02A00A1A533 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		5540AB6821ECC02A00A1A533 /* MediaLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaLibrary.swift; sourceTree = "<group>"; };
+		5540AB6921ECC02A00A1A533 /* MediaLibraryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaLibraryManager.swift; sourceTree = "<group>"; };
+		5540AB6A21ECC02A00A1A533 /* MetadataKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetadataKey.swift; sourceTree = "<group>"; };
+		5540AB6C21ECC02A00A1A533 /* MediaMetadataError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaMetadataError.swift; sourceTree = "<group>"; };
+		5540AB6E21ECC02A00A1A533 /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		5540AB7021ECC02A00A1A533 /* EXIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXIF.swift; sourceTree = "<group>"; };
+		5540AB7121ECC02A00A1A533 /* IPTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPTC.swift; sourceTree = "<group>"; };
+		5540AB7221ECC02A00A1A533 /* TIFF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIFF.swift; sourceTree = "<group>"; };
+		5540AB7321ECC02A00A1A533 /* JFIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFIF.swift; sourceTree = "<group>"; };
+		5540AB8221ECC07600A1A533 /* XCTestcase+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestcase+Extension.swift"; sourceTree = "<group>"; };
+		5540AB8321ECC07700A1A533 /* PhotoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
+		5540AB8421ECC07700A1A533 /* meshi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meshi.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5540AB0121E22C3C00A1A533 /* MediaMetadaSDK.framework in Frameworks */,
+				5540AB5921ECBFDC00A1A533 /* MediaMetadataSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,18 +152,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5540AAE921E22C3C00A1A533 /* Frameworks */ = {
+		5540AB4121ECBFDC00A1A533 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5540AAF121E22C3C00A1A533 /* Frameworks */ = {
+		5540AB4921ECBFDC00A1A533 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5540AAF521E22C3C00A1A533 /* MediaMetadaSDK.framework in Frameworks */,
+				5540AB4D21ECBFDC00A1A533 /* MediaMetadataSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +176,8 @@
 				5540AAB821E1C6E000A1A533 /* MediaMetadata */,
 				5540AACD21E1C6E400A1A533 /* MediaMetadataTests */,
 				5540AAD821E1C6E400A1A533 /* MediaMetadataUITests */,
-				5540AAED21E22C3C00A1A533 /* MediaMetadaSDK */,
-				5540AAFA21E22C3C00A1A533 /* MediaMetadaSDKTests */,
+				5540AB4521ECBFDC00A1A533 /* MediaMetadataSDK */,
+				5540AB5221ECBFDC00A1A533 /* MediaMetadataSDKTests */,
 				5540AAB721E1C6E000A1A533 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -188,8 +188,8 @@
 				5540AAB621E1C6E000A1A533 /* MediaMetadata.app */,
 				5540AACA21E1C6E400A1A533 /* MediaMetadataTests.xctest */,
 				5540AAD521E1C6E400A1A533 /* MediaMetadataUITests.xctest */,
-				5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */,
-				5540AAF421E22C3C00A1A533 /* MediaMetadaSDKTests.xctest */,
+				5540AB4421ECBFDC00A1A533 /* MediaMetadataSDK.framework */,
+				5540AB4C21ECBFDC00A1A533 /* MediaMetadataSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,81 +225,81 @@
 			path = MediaMetadataUITests;
 			sourceTree = "<group>";
 		};
-		5540AAED21E22C3C00A1A533 /* MediaMetadaSDK */ = {
+		5540AB4521ECBFDC00A1A533 /* MediaMetadataSDK */ = {
 			isa = PBXGroup;
 			children = (
-				5540AAEE21E22C3C00A1A533 /* MediaMetadaSDK.h */,
-				5540AB0B21E24ED800A1A533 /* Media */,
-				5540AB0C21E24EE400A1A533 /* Metadata */,
-				5540AB3E21EC393000A1A533 /* Error */,
-				5540AAEF21E22C3C00A1A533 /* Info.plist */,
+				5540AB6221ECC02A00A1A533 /* Media */,
+				5540AB6D21ECC02A00A1A533 /* Metadata */,
+				5540AB6B21ECC02A00A1A533 /* Error */,
+				5540AB4621ECBFDC00A1A533 /* MediaMetadataSDK.h */,
+				5540AB4721ECBFDC00A1A533 /* Info.plist */,
 			);
-			path = MediaMetadaSDK;
+			path = MediaMetadataSDK;
 			sourceTree = "<group>";
 		};
-		5540AAFA21E22C3C00A1A533 /* MediaMetadaSDKTests */ = {
+		5540AB5221ECBFDC00A1A533 /* MediaMetadataSDKTests */ = {
 			isa = PBXGroup;
 			children = (
-				5540AB2F21E9E19F00A1A533 /* meshi.jpg */,
-				5540AAFB21E22C3C00A1A533 /* MediaMetadaSDKTests.swift */,
-				5540AAFD21E22C3C00A1A533 /* Info.plist */,
-				5540AB3121E9E3DB00A1A533 /* XCTestcase+Extension.swift */,
-				5540AB3321E9E53900A1A533 /* PhotoTests.swift */,
+				5540AB8421ECC07700A1A533 /* meshi.jpg */,
+				5540AB5321ECBFDC00A1A533 /* MediaMetadataSDKTests.swift */,
+				5540AB8221ECC07600A1A533 /* XCTestcase+Extension.swift */,
+				5540AB8321ECC07700A1A533 /* PhotoTests.swift */,
+				5540AB5521ECBFDC00A1A533 /* Info.plist */,
 			);
-			path = MediaMetadaSDKTests;
+			path = MediaMetadataSDKTests;
 			sourceTree = "<group>";
 		};
-		5540AB0B21E24ED800A1A533 /* Media */ = {
+		5540AB6221ECC02A00A1A533 /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				5540AB0D21E24F7300A1A533 /* MediaLibraryManager.swift */,
-				5540AB0F21E24F8300A1A533 /* MediaLibrary.swift */,
-				5540AB1321E2515600A1A533 /* Media.swift */,
-				5540AB1521E35DD000A1A533 /* MetadataKey.swift */,
-				5540AB1721E35DDB00A1A533 /* MediaType.swift */,
-				5540AB2721E7073200A1A533 /* Photo.swift */,
-				5540AB2921E7073B00A1A533 /* Video.swift */,
-				5540AB3921EC205E00A1A533 /* Audio.swift */,
+				5540AB6321ECC02A00A1A533 /* MediaType.swift */,
+				5540AB6421ECC02A00A1A533 /* Photo.swift */,
+				5540AB6521ECC02A00A1A533 /* Media.swift */,
+				5540AB6621ECC02A00A1A533 /* Audio.swift */,
+				5540AB6721ECC02A00A1A533 /* Video.swift */,
+				5540AB6821ECC02A00A1A533 /* MediaLibrary.swift */,
+				5540AB6921ECC02A00A1A533 /* MediaLibraryManager.swift */,
+				5540AB6A21ECC02A00A1A533 /* MetadataKey.swift */,
 			);
 			path = Media;
 			sourceTree = "<group>";
 		};
-		5540AB0C21E24EE400A1A533 /* Metadata */ = {
+		5540AB6B21ECC02A00A1A533 /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				5540AB1D21E6F57500A1A533 /* Photo */,
-				5540AB1121E24FD700A1A533 /* Metadata.swift */,
+				5540AB6C21ECC02A00A1A533 /* MediaMetadataError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		5540AB6D21ECC02A00A1A533 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				5540AB6E21ECC02A00A1A533 /* Metadata.swift */,
+				5540AB6F21ECC02A00A1A533 /* Photo */,
 			);
 			path = Metadata;
 			sourceTree = "<group>";
 		};
-		5540AB1D21E6F57500A1A533 /* Photo */ = {
+		5540AB6F21ECC02A00A1A533 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
-				5540AB1E21E6F58600A1A533 /* EXIF.swift */,
-				5540AB2021E6F5A300A1A533 /* IPTC.swift */,
-				5540AB2221E6F5B200A1A533 /* JFIF.swift */,
-				5540AB2421E6F5C000A1A533 /* TIFF.swift */,
+				5540AB7021ECC02A00A1A533 /* EXIF.swift */,
+				5540AB7121ECC02A00A1A533 /* IPTC.swift */,
+				5540AB7221ECC02A00A1A533 /* TIFF.swift */,
+				5540AB7321ECC02A00A1A533 /* JFIF.swift */,
 			);
 			path = Photo;
-			sourceTree = "<group>";
-		};
-		5540AB3E21EC393000A1A533 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				5540AB3B21EC2C6400A1A533 /* MediaMetadataError.swift */,
-			);
-			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5540AAE721E22C3C00A1A533 /* Headers */ = {
+		5540AB3F21ECBFDC00A1A533 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5540AAFE21E22C3C00A1A533 /* MediaMetadaSDK.h in Headers */,
+				5540AB5621ECBFDC00A1A533 /* MediaMetadataSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,12 +313,12 @@
 				5540AAB221E1C6E000A1A533 /* Sources */,
 				5540AAB321E1C6E000A1A533 /* Frameworks */,
 				5540AAB421E1C6E000A1A533 /* Resources */,
-				5540AB0621E22C3C00A1A533 /* Embed Frameworks */,
+				5540AB5E21ECBFDC00A1A533 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5540AB0021E22C3C00A1A533 /* PBXTargetDependency */,
+				5540AB5821ECBFDC00A1A533 /* PBXTargetDependency */,
 			);
 			name = MediaMetadata;
 			productName = MediaMetadata;
@@ -361,41 +361,41 @@
 			productReference = 5540AAD521E1C6E400A1A533 /* MediaMetadataUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		5540AAEB21E22C3C00A1A533 /* MediaMetadaSDK */ = {
+		5540AB4321ECBFDC00A1A533 /* MediaMetadataSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5540AB0321E22C3C00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadaSDK" */;
+			buildConfigurationList = 5540AB5B21ECBFDC00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadataSDK" */;
 			buildPhases = (
-				5540AAE721E22C3C00A1A533 /* Headers */,
-				5540AAE821E22C3C00A1A533 /* Sources */,
-				5540AAE921E22C3C00A1A533 /* Frameworks */,
-				5540AAEA21E22C3C00A1A533 /* Resources */,
+				5540AB3F21ECBFDC00A1A533 /* Headers */,
+				5540AB4021ECBFDC00A1A533 /* Sources */,
+				5540AB4121ECBFDC00A1A533 /* Frameworks */,
+				5540AB4221ECBFDC00A1A533 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MediaMetadaSDK;
-			productName = MediaMetadaSDK;
-			productReference = 5540AAEC21E22C3C00A1A533 /* MediaMetadaSDK.framework */;
+			name = MediaMetadataSDK;
+			productName = MediaMetadataSDK;
+			productReference = 5540AB4421ECBFDC00A1A533 /* MediaMetadataSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5540AAF321E22C3C00A1A533 /* MediaMetadaSDKTests */ = {
+		5540AB4B21ECBFDC00A1A533 /* MediaMetadataSDKTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5540AB0721E22C3C00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadaSDKTests" */;
+			buildConfigurationList = 5540AB5F21ECBFDC00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadataSDKTests" */;
 			buildPhases = (
-				5540AAF021E22C3C00A1A533 /* Sources */,
-				5540AAF121E22C3C00A1A533 /* Frameworks */,
-				5540AAF221E22C3C00A1A533 /* Resources */,
+				5540AB4821ECBFDC00A1A533 /* Sources */,
+				5540AB4921ECBFDC00A1A533 /* Frameworks */,
+				5540AB4A21ECBFDC00A1A533 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5540AAF721E22C3C00A1A533 /* PBXTargetDependency */,
-				5540AAF921E22C3C00A1A533 /* PBXTargetDependency */,
+				5540AB4F21ECBFDC00A1A533 /* PBXTargetDependency */,
+				5540AB5121ECBFDC00A1A533 /* PBXTargetDependency */,
 			);
-			name = MediaMetadaSDKTests;
-			productName = MediaMetadaSDKTests;
-			productReference = 5540AAF421E22C3C00A1A533 /* MediaMetadaSDKTests.xctest */;
+			name = MediaMetadataSDKTests;
+			productName = MediaMetadataSDKTests;
+			productReference = 5540AB4C21ECBFDC00A1A533 /* MediaMetadataSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -419,11 +419,10 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 5540AAB521E1C6E000A1A533;
 					};
-					5540AAEB21E22C3C00A1A533 = {
+					5540AB4321ECBFDC00A1A533 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
 					};
-					5540AAF321E22C3C00A1A533 = {
+					5540AB4B21ECBFDC00A1A533 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 5540AAB521E1C6E000A1A533;
 					};
@@ -445,8 +444,8 @@
 				5540AAB521E1C6E000A1A533 /* MediaMetadata */,
 				5540AAC921E1C6E400A1A533 /* MediaMetadataTests */,
 				5540AAD421E1C6E400A1A533 /* MediaMetadataUITests */,
-				5540AAEB21E22C3C00A1A533 /* MediaMetadaSDK */,
-				5540AAF321E22C3C00A1A533 /* MediaMetadaSDKTests */,
+				5540AB4321ECBFDC00A1A533 /* MediaMetadataSDK */,
+				5540AB4B21ECBFDC00A1A533 /* MediaMetadataSDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -476,18 +475,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5540AAEA21E22C3C00A1A533 /* Resources */ = {
+		5540AB4221ECBFDC00A1A533 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5540AAF221E22C3C00A1A533 /* Resources */ = {
+		5540AB4A21ECBFDC00A1A533 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5540AB3021E9E19F00A1A533 /* meshi.jpg in Resources */,
+				5540AB8721ECC07700A1A533 /* meshi.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,34 +518,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5540AAE821E22C3C00A1A533 /* Sources */ = {
+		5540AB4021ECBFDC00A1A533 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5540AB3C21EC2C6400A1A533 /* MediaMetadataError.swift in Sources */,
-				5540AB2321E6F5B200A1A533 /* JFIF.swift in Sources */,
-				5540AB2A21E7073B00A1A533 /* Video.swift in Sources */,
-				5540AB1F21E6F58600A1A533 /* EXIF.swift in Sources */,
-				5540AB1821E35DDB00A1A533 /* MediaType.swift in Sources */,
-				5540AB1021E24F8300A1A533 /* MediaLibrary.swift in Sources */,
-				5540AB1221E24FD700A1A533 /* Metadata.swift in Sources */,
-				5540AB1421E2515600A1A533 /* Media.swift in Sources */,
-				5540AB3A21EC205E00A1A533 /* Audio.swift in Sources */,
-				5540AB2121E6F5A300A1A533 /* IPTC.swift in Sources */,
-				5540AB2821E7073200A1A533 /* Photo.swift in Sources */,
-				5540AB0E21E24F7300A1A533 /* MediaLibraryManager.swift in Sources */,
-				5540AB2521E6F5C000A1A533 /* TIFF.swift in Sources */,
-				5540AB1621E35DD000A1A533 /* MetadataKey.swift in Sources */,
+				5540AB7A21ECC02B00A1A533 /* MediaLibraryManager.swift in Sources */,
+				5540AB7721ECC02B00A1A533 /* Audio.swift in Sources */,
+				5540AB7D21ECC02B00A1A533 /* Metadata.swift in Sources */,
+				5540AB7521ECC02B00A1A533 /* Photo.swift in Sources */,
+				5540AB8121ECC02B00A1A533 /* JFIF.swift in Sources */,
+				5540AB7921ECC02B00A1A533 /* MediaLibrary.swift in Sources */,
+				5540AB7421ECC02B00A1A533 /* MediaType.swift in Sources */,
+				5540AB7621ECC02B00A1A533 /* Media.swift in Sources */,
+				5540AB7B21ECC02B00A1A533 /* MetadataKey.swift in Sources */,
+				5540AB7821ECC02B00A1A533 /* Video.swift in Sources */,
+				5540AB8021ECC02B00A1A533 /* TIFF.swift in Sources */,
+				5540AB7F21ECC02B00A1A533 /* IPTC.swift in Sources */,
+				5540AB7E21ECC02B00A1A533 /* EXIF.swift in Sources */,
+				5540AB7C21ECC02B00A1A533 /* MediaMetadataError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5540AAF021E22C3C00A1A533 /* Sources */ = {
+		5540AB4821ECBFDC00A1A533 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5540AB3421E9E53900A1A533 /* PhotoTests.swift in Sources */,
-				5540AB3221E9E3DB00A1A533 /* XCTestcase+Extension.swift in Sources */,
-				5540AAFC21E22C3C00A1A533 /* MediaMetadaSDKTests.swift in Sources */,
+				5540AB8621ECC07700A1A533 /* PhotoTests.swift in Sources */,
+				5540AB8521ECC07700A1A533 /* XCTestcase+Extension.swift in Sources */,
+				5540AB5421ECBFDC00A1A533 /* MediaMetadataSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,20 +562,20 @@
 			target = 5540AAB521E1C6E000A1A533 /* MediaMetadata */;
 			targetProxy = 5540AAD621E1C6E400A1A533 /* PBXContainerItemProxy */;
 		};
-		5540AAF721E22C3C00A1A533 /* PBXTargetDependency */ = {
+		5540AB4F21ECBFDC00A1A533 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5540AAEB21E22C3C00A1A533 /* MediaMetadaSDK */;
-			targetProxy = 5540AAF621E22C3C00A1A533 /* PBXContainerItemProxy */;
+			target = 5540AB4321ECBFDC00A1A533 /* MediaMetadataSDK */;
+			targetProxy = 5540AB4E21ECBFDC00A1A533 /* PBXContainerItemProxy */;
 		};
-		5540AAF921E22C3C00A1A533 /* PBXTargetDependency */ = {
+		5540AB5121ECBFDC00A1A533 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5540AAB521E1C6E000A1A533 /* MediaMetadata */;
-			targetProxy = 5540AAF821E22C3C00A1A533 /* PBXContainerItemProxy */;
+			targetProxy = 5540AB5021ECBFDC00A1A533 /* PBXContainerItemProxy */;
 		};
-		5540AB0021E22C3C00A1A533 /* PBXTargetDependency */ = {
+		5540AB5821ECBFDC00A1A533 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5540AAEB21E22C3C00A1A533 /* MediaMetadaSDK */;
-			targetProxy = 5540AAFF21E22C3C00A1A533 /* PBXContainerItemProxy */;
+			target = 5540AB4321ECBFDC00A1A533 /* MediaMetadataSDK */;
+			targetProxy = 5540AB5721ECBFDC00A1A533 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -836,10 +835,9 @@
 			};
 			name = Release;
 		};
-		5540AB0421E22C3C00A1A533 /* Debug */ = {
+		5540AB5C21ECBFDC00A1A533 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -848,17 +846,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MediaMetadaSDK/Info.plist;
+				INFOPLIST_FILE = MediaMetadataSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadaSDK";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadataSDK";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -866,10 +863,9 @@
 			};
 			name = Debug;
 		};
-		5540AB0521E22C3C00A1A533 /* Release */ = {
+		5540AB5D21ECBFDC00A1A533 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -878,14 +874,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MediaMetadaSDK/Info.plist;
+				INFOPLIST_FILE = MediaMetadataSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadaSDK";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadataSDK";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -895,19 +891,19 @@
 			};
 			name = Release;
 		};
-		5540AB0821E22C3C00A1A533 /* Debug */ = {
+		5540AB6021ECBFDC00A1A533 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BTZN69U72;
-				INFOPLIST_FILE = MediaMetadaSDKTests/Info.plist;
+				INFOPLIST_FILE = MediaMetadataSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadaSDKTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadataSDKTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -915,19 +911,19 @@
 			};
 			name = Debug;
 		};
-		5540AB0921E22C3C00A1A533 /* Release */ = {
+		5540AB6121ECBFDC00A1A533 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BTZN69U72;
-				INFOPLIST_FILE = MediaMetadaSDKTests/Info.plist;
+				INFOPLIST_FILE = MediaMetadataSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadaSDKTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.MediaMetadataSDKTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -974,20 +970,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5540AB0321E22C3C00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadaSDK" */ = {
+		5540AB5B21ECBFDC00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadataSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5540AB0421E22C3C00A1A533 /* Debug */,
-				5540AB0521E22C3C00A1A533 /* Release */,
+				5540AB5C21ECBFDC00A1A533 /* Debug */,
+				5540AB5D21ECBFDC00A1A533 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5540AB0721E22C3C00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadaSDKTests" */ = {
+		5540AB5F21ECBFDC00A1A533 /* Build configuration list for PBXNativeTarget "MediaMetadataSDKTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5540AB0821E22C3C00A1A533 /* Debug */,
-				5540AB0921E22C3C00A1A533 /* Release */,
+				5540AB6021ECBFDC00A1A533 /* Debug */,
+				5540AB6121ECBFDC00A1A533 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
