@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5527B19A21ECE06300CF1881 /* pancake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5527B19921ECE06300CF1881 /* pancake.jpg */; };
+		5527B19C21ECE1B100CF1881 /* GPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527B19B21ECE1B100CF1881 /* GPS.swift */; };
 		5540AABA21E1C6E000A1A533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AAB921E1C6E000A1A533 /* AppDelegate.swift */; };
 		5540AABC21E1C6E000A1A533 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5540AABB21E1C6E000A1A533 /* ViewController.swift */; };
 		5540AABF21E1C6E000A1A533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5540AABD21E1C6E000A1A533 /* Main.storyboard */; };
@@ -91,6 +93,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5527B19921ECE06300CF1881 /* pancake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pancake.jpg; sourceTree = "<group>"; };
+		5527B19B21ECE1B100CF1881 /* GPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPS.swift; sourceTree = "<group>"; };
 		5540AAB621E1C6E000A1A533 /* MediaMetadata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaMetadata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5540AAB921E1C6E000A1A533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5540AABB21E1C6E000A1A533 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				5540AB8421ECC07700A1A533 /* meshi.jpg */,
+				5527B19921ECE06300CF1881 /* pancake.jpg */,
 				5540AB5321ECBFDC00A1A533 /* MediaMetadataSDKTests.swift */,
 				5540AB8221ECC07600A1A533 /* XCTestcase+Extension.swift */,
 				5540AB8321ECC07700A1A533 /* PhotoTests.swift */,
@@ -285,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				5540AB7021ECC02A00A1A533 /* EXIF.swift */,
+				5527B19B21ECE1B100CF1881 /* GPS.swift */,
 				5540AB7121ECC02A00A1A533 /* IPTC.swift */,
 				5540AB7221ECC02A00A1A533 /* TIFF.swift */,
 				5540AB7321ECC02A00A1A533 /* JFIF.swift */,
@@ -487,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5540AB8721ECC07700A1A533 /* meshi.jpg in Resources */,
+				5527B19A21ECE06300CF1881 /* pancake.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +543,7 @@
 				5540AB7F21ECC02B00A1A533 /* IPTC.swift in Sources */,
 				5540AB7E21ECC02B00A1A533 /* EXIF.swift in Sources */,
 				5540AB7C21ECC02B00A1A533 /* MediaMetadataError.swift in Sources */,
+				5527B19C21ECE1B100CF1881 /* GPS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
