@@ -8,6 +8,9 @@
 
 import Foundation
 
+/// MediaMetadaSDKのエラードメイン
+private let MediaMetadataErrorDomain = "jp.co.falcon-tech.MediaMetadata"
+
 /// 画像データが存在しない場合のエラーコード
 public let MediaMetadataErrorBadPhotoData = 11101
 /// 画像データの生成に失敗した場合のエラーコード
@@ -21,6 +24,8 @@ public let MediaMetadataErrorCannotUpdatePhotoAsset = 11105
 
 /// MediaMetadataSDKのエラーを表現するための構造体
 public struct MediaMetadataError: Error {
+    /// エラードメイン
+    public let domain: String
     /// エラーコード
     public let code: Int
 }
