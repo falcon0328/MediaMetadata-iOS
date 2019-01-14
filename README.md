@@ -65,6 +65,9 @@ media.getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Voi
 
 ![クラス図](https://github.com/falcon0328/MediaMetadata-iOS/blob/develop/MediaMetadata-class.png)
 
+## クラスリファレンス
+`MediaMetadataSDK`のクラスリファレンスは[こちら](https://falcon0328.github.io/MediaMetadata-iOS/)より参照できます。
+
 ## ライセンス
 `MediaMetada-iOS`は MIT LICENSE です。詳細は[MIT License](LICENSE)を参照ください。
 
