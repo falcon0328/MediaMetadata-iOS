@@ -257,14 +257,14 @@
 		5540AB6221ECC02A00A1A533 /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				5540AB6321ECC02A00A1A533 /* MediaType.swift */,
-				5540AB6421ECC02A00A1A533 /* Photo.swift */,
-				5540AB6521ECC02A00A1A533 /* Media.swift */,
-				5540AB6621ECC02A00A1A533 /* Audio.swift */,
-				5540AB6721ECC02A00A1A533 /* Video.swift */,
-				5540AB6821ECC02A00A1A533 /* MediaLibrary.swift */,
 				5540AB6921ECC02A00A1A533 /* MediaLibraryManager.swift */,
+				5540AB6821ECC02A00A1A533 /* MediaLibrary.swift */,
+				5540AB6321ECC02A00A1A533 /* MediaType.swift */,
 				5540AB6A21ECC02A00A1A533 /* MetadataKey.swift */,
+				5540AB6521ECC02A00A1A533 /* Media.swift */,
+				5540AB6421ECC02A00A1A533 /* Photo.swift */,
+				5540AB6721ECC02A00A1A533 /* Video.swift */,
+				5540AB6621ECC02A00A1A533 /* Audio.swift */,
 			);
 			path = Media;
 			sourceTree = "<group>";
