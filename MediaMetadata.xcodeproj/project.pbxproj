@@ -231,8 +231,8 @@
 				5540AAEE21E22C3C00A1A533 /* MediaMetadaSDK.h */,
 				5540AB0B21E24ED800A1A533 /* Media */,
 				5540AB0C21E24EE400A1A533 /* Metadata */,
+				5540AB3E21EC393000A1A533 /* Error */,
 				5540AAEF21E22C3C00A1A533 /* Info.plist */,
-				5540AB3B21EC2C6400A1A533 /* MediaMetadataError.swift */,
 			);
 			path = MediaMetadaSDK;
 			sourceTree = "<group>";
@@ -282,6 +282,14 @@
 				5540AB2421E6F5C000A1A533 /* TIFF.swift */,
 			);
 			path = Photo;
+			sourceTree = "<group>";
+		};
+		5540AB3E21EC393000A1A533 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				5540AB3B21EC2C6400A1A533 /* MediaMetadataError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
