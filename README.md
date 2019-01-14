@@ -63,7 +63,7 @@ media.getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Voi
 ## クラス図
 `MediaMetada-iOS`は以下のクラス図をもとに実装されています。
 
-![クラス図](https://github.com/falcon0328/MediaMetadata-iOS/blob/develop/MediaMetadata-class.png)
+![クラス図](https://raw.githubusercontent.com/falcon0328/MediaMetadata-iOS/master/MediaMetadata-class.png)
 
 ## クラスリファレンス
 `MediaMetadataSDK`のクラスリファレンスは[こちら](https://falcon0328.github.io/MediaMetadata-iOS/)より参照できます。
@@ -74,7 +74,7 @@ media.getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Voi
 ## クレジット
 `MediaMetadata-iOS` は　[Falcon Tech](https://falcon-tech.connpass.com)の活動で作成されています。PRやご要望（Issue）もお待ちしております。
 <p align="center">
-<a href="https://falcon-tech.connpass.com"><img src="https://github.com/falcon0328/MediaMetadata-iOS/blob/develop/FalconTech.jpg" width=128 height=128 /></a>
+<a href="https://falcon-tech.connpass.com"><img src="https://raw.githubusercontent.com/falcon0328/MediaMetadata-iOS/master/FalconTech.jpg" width=128 height=128 /></a>
 </p>
 
 ## FAQ
