@@ -70,6 +70,9 @@ media.getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Voi
 
 ## クレジット
 `MediaMetadata-iOS` は　[Falcon Tech](https://falcon-tech.connpass.com)の活動で作成されています。PRやご要望（Issue）もお待ちしております。
+<p align="center">
+<a href="https://falcon-tech.connpass.com"><img src="https://github.com/falcon0328/MediaMetadata-iOS/blob/develop/FalconTech.jpg" width=128 height=128 /></a>
+</p>
 
 ## FAQ
 ### Q＆Aの仕方
