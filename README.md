@@ -14,11 +14,16 @@ iOS端末上の写真や動画に対して、簡単にメタデータを付与�
 - Swift 4.2+
 
 ## 導入方法
-用意中
+`MediaMetada-iOS`はCarthageでの導入にのみ対応しています。
+### Carthage
+
+
+## 利用方法
+
 
 ## クラス図
-本SDKは以下のクラス図をもとに実装されています。
+`MediaMetada-iOS`は以下のクラス図をもとに実装されています。
 ![クラス図](https://github.com/falcon0328/MediaMetadata-iOS/blob/develop/MediaMetadata-class.png)
 
 ## LICENSE
-本SDKは MIT LICENSE です。詳細は[MIT License](LICENSE)を参照ください。
+`MediaMetada-iOS`は MIT LICENSE です。詳細は[MIT License](LICENSE)を参照ください。
