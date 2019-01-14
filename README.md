@@ -22,7 +22,20 @@ github "falcon0328/MediaMetadata-iOS"
 ```
 
 ## 利用方法
+`MediaLibrary`クラスの`load`メソッドに`PHFetchResult<PHAsset>`を与えることでカメラロールの写真や動画や音声を独自の`Media`型にマッピングして提供します。 
 
+（※ `MediaLibrary`はシングルトン専用なので`shared`プロパティから各種操作を行ってください。）
+``` swift
+// 1. Photos.frameworkをimportします
+import Photos
+// 2. PHAssetをfetchしておきます
+let assets = PHAsset.fetchAssets(with: nil)
+// 3. Media型（MediaMetadata-iOSでのカメラロールのメディアを表現するクラス）の配列を取得できます。
+let mediaList = MediaLibrary.load(assets: assets)
+// 4. 以下のような形式でメタデータやData型のデータとして取得できます。ただし、これらのメソッドは非同期です。
+mediaList.first!.getData(completionHandler: @escaping (Data?) -> Void)
+mediaList.first!.getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Void)
+```
 
 ## クラス図
 `MediaMetada-iOS`は以下のクラス図をもとに実装されています。
