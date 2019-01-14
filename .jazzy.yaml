@@ -1,0 +1,8 @@
+clean: true
+min_acl: public
+output: docs 
+github_url: https://github.com/falcon0328/MediaMetadata-iOS
+author: Falcon Tech
+author_url: https://falcon-tech.connpass.com
+xcodebuild_arguments: [-project,MediaMetadata.xcodeproj,-scheme,MediaMetadataSDK]
+module: MediaMetadataSDK

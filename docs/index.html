@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MediaMetadataSDK  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="MediaMetadataSDK  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">MediaMetadataSDK Docs</a> (90% documented)</p>
+        <p class="header-right"><a href="https://github.com/falcon0328/MediaMetadata-iOS"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">MediaMetadataSDK Reference</a>
+        <img id="carat" src="img/carat.png" />
+        MediaMetadataSDK  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/MediaLibrary.html">MediaLibrary</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:16MediaMetadataSDK0aB17ErrorBadPhotoDataSivp">MediaMetadataErrorBadPhotoData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:16MediaMetadataSDK0aB26ErrorCannotCreateImageDataSivp">MediaMetadataErrorCannotCreateImageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:16MediaMetadataSDK0aB27ErrorCannotCreatePhotoAssetSivp">MediaMetadataErrorCannotCreatePhotoAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:16MediaMetadataSDK0aB26ErrorCannotCreatePhotoFileSivp">MediaMetadataErrorCannotCreatePhotoFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:16MediaMetadataSDK0aB27ErrorCannotUpdatePhotoAssetSivp">MediaMetadataErrorCannotUpdatePhotoAsset</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/MediaType.html">MediaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/MetadataKey.html">MetadataKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Array.html">Array</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/Media.html">Media</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/MediaLibraryManager.html">MediaLibraryManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Metadata.html">Metadata</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/EXIF.html">EXIF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/IPTC.html">IPTC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/MediaMetadataError.html">MediaMetadataError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TIFF.html">TIFF</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='mediametadata-ios' class='heading'>MediaMetadata-iOS</h1>
+
+<p>iOS端末上の写真や動画に対して、簡単にメタデータを付与するためのSDKです。</p>
+
+<p><a href="https://github.com/hsylife/SwiftyPickerPopover"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="MIT License"></a>
+<img src="https://img.shields.io/badge/iOS-12.1+-green.svg" alt="iOS">
+<img src="https://img.shields.io/badge/Xcode-10.1+-green.svg" alt="Xcode">
+<img src="https://img.shields.io/badge/language-Swift4.2+-green.svg" alt="language"></p>
+<h2 id='' class='heading'>インストール条件</h2>
+
+<p><code>MediaMetada-iOS</code>は以下の環境での動作を保証しています。</p>
+
+<ul>
+<li>iOS 12.1+</li>
+<li>Xcode 10.1+</li>
+<li>Swift 4.2+</li>
+</ul>
+<h2 id='' class='heading'>導入方法</h2>
+
+<p><code>MediaMetada-iOS</code>はCarthageでの導入にのみ対応しています。</p>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p>Carthageを使って<code>MediaMetada-iOS</code>をXcodeプロジェクトに導入するには、<code>Cartfile</code>で以下の文言を指定してください。</p>
+<pre class="highlight plaintext"><code>github "falcon0328/MediaMetadata-iOS"
+</code></pre>
+<h2 id='' class='heading'>利用方法</h2>
+
+<p><code>MediaMetadata-iOS</code>の実際の利用手順を以下に記載します。</p>
+<h3 id='1-code-photos-framework-code' class='heading'>1. <code>Photos.framework</code>をインポートします</h3>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Photos</span>
+</code></pre>
+<h3 id='2-code-phasset-code' class='heading'>2. <code>PHAsset</code>をフェッチ</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">assets</span> <span class="o">=</span> <span class="kt">PHAsset</span><span class="o">.</span><span class="nf">fetchAssets</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+</code></pre>
+<h3 id='3-code-media-code' class='heading'>3. <code><a href="Protocols/Media.html">Media</a></code> 型の配列を取得できます。</h3>
+
+<p><code>MediaLibrary</code>クラスの<code>load</code>メソッドに<code>PHFetchResult&lt;PHAsset&gt;</code>を与えることでカメラロールの写真や動画や音声を独自の<code>Media</code>プロトコル（以下、メディア）にマッピングして提供します。</p>
+
+<p>（※ <code>MediaLibrary</code>はシングルトン専用なので<code>shared</code>プロパティから各種操作を行ってください。）</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">mediaList</span> <span class="o">=</span> <span class="kt">MediaLibrary</span><span class="o">.</span><span class="nf">load</span><span class="p">(</span><span class="nv">assets</span><span class="p">:</span> <span class="n">assets</span><span class="p">)</span>
+</code></pre>
+<h3 id='4-code-data-code' class='heading'>4. メディアからは以下のような形式でメタデータや<code>Data</code>型のデータとして取得できます。</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">media</span> <span class="o">=</span> <span class="n">mediaList</span><span class="o">.</span><span class="n">first</span><span class="o">!</span>
+<span class="n">media</span><span class="o">.</span><span class="nf">getData</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Data</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span>
+<span class="n">media</span><span class="o">.</span><span class="nf">getMetadata</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">MetadataKey</span> <span class="p">:</span> <span class="kt">Metadata</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span>
+</code></pre>
+
+<p>（※ ただし、これらのメソッドは非同期です。）</p>
+<h3 id='5' class='heading'>5. メタデータの読み込みや編集</h3>
+
+<p>メタデータの読み/書きは read/write メソッドからできます。メタデータは、データを内部的に<code>[String: Any]</code>として管理しています。
+（※ 例えば写真のメタデータはExifやTIFFなどがあり、これらもMetadata型のデータとして表現します。）</p>
+<h3 id='6' class='heading'>6. メタデータをメディアに書き込む</h3>
+
+<p>メタデータを際には、メディアの<code>setMetadata(key: MetadataKey, value: Metadata)</code>を利用します。</p>
+<h3 id='7' class='heading'>7. メディアの保存</h3>
+
+<p>メディアの<code>save(completionHandler: @escaping (Bool, Error?) -&gt; Void)</code>メソッドを呼ぶことでカメラロールに新しいデータとしてメタデータ付きで保存されます。</p>
+<h2 id='' class='heading'>クラス図</h2>
+
+<p><code>MediaMetada-iOS</code>は以下のクラス図をもとに実装されています。</p>
+
+<p><img src="https://github.com/falcon0328/MediaMetadata-iOS/blob/develop/MediaMetadata-class.png" alt="クラス図"></p>
+<h2 id='' class='heading'>ライセンス</h2>
+
+<p><code>MediaMetada-iOS</code>は MIT LICENSE です。詳細は<a href="LICENSE">MIT License</a>を参照ください。</p>
+<h2 id='' class='heading'>クレジット</h2>
+
+<p><code>MediaMetadata-iOS</code> は　<a href="https://falcon-tech.connpass.com">Falcon Tech</a>の活動で作成されています。PRやご要望（Issue）もお待ちしております。</p>
+
+<p align="center">
+<a href="https://falcon-tech.connpass.com"><img src="https://github.com/falcon0328/MediaMetadata-iOS/blob/develop/FalconTech.jpg" width=128 height=128 /></a>
+</p>
+<h2 id='faq' class='heading'>FAQ</h2>
+<h3 id='q-a' class='heading'>Q＆Aの仕方</h3>
+
+<p>Issueを新規作成して、メンションをつけていただければ回答させていただきます。</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://falcon-tech.connpass.com" target="_blank" rel="external">Falcon Tech</a>. All rights reserved. (Last updated: 2019-01-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
