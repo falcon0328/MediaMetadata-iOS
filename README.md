@@ -17,6 +17,7 @@ iOS端末上の写真や動画に対して、簡単にメタデータを付与�
 用意中
 
 ## クラス図
+本SDKは以下のクラス図をもとに実装されています。
 ![クラス図](https://github.com/falcon0328/MediaMetadata-iOS/blob/develop/MediaMetadata-class.png)
 
 ## LICENSE
