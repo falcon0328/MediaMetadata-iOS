@@ -16,7 +16,7 @@ public let MediaMetadataErrorBadPhotoData = 11101
 /// 画像データの生成に失敗した場合のエラーコード
 public let MediaMetadataErrorCannotCreateImageData = 11102
 /// 画像ファイルの生成に失敗した場合のエラーコード
-public let MediaMetadataErrorCannotCreateFile = 11103
+public let MediaMetadataErrorCannotCreatePhotoFile = 11103
 /// 画像アセットの生成に失敗した場合のエラーコード
 public let MediaMetadataErrorCannotCreatePhotoAsset = 11104
 /// 画像アセットの更新に失敗した場合のエラーコード
