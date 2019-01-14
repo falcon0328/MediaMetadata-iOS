@@ -29,7 +29,26 @@
       codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5540AB4B21ECBFDC00A1A533"
+               BuildableName = "MediaMetadataSDKTests.xctest"
+               BlueprintName = "MediaMetadataSDKTests"
+               ReferencedContainer = "container:MediaMetadata.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5540AB4321ECBFDC00A1A533"
+            BuildableName = "MediaMetadataSDK.framework"
+            BlueprintName = "MediaMetadataSDK"
+            ReferencedContainer = "container:MediaMetadata.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
