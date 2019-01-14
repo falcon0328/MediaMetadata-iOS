@@ -25,17 +25,35 @@ github "falcon0328/MediaMetadata-iOS"
 `MediaLibrary`クラスの`load`メソッドに`PHFetchResult<PHAsset>`を与えることでカメラロールの写真や動画や音声を独自の`Media`型にマッピングして提供します。 
 
 （※ `MediaLibrary`はシングルトン専用なので`shared`プロパティから各種操作を行ってください。）
+1. Photos.frameworkをimportします
 ``` swift
-// 1. Photos.frameworkをimportします
 import Photos
-// 2. PHAssetをfetchしておきます
-let assets = PHAsset.fetchAssets(with: nil)
-// 3. Media型（MediaMetadata-iOSでのカメラロールのメディアを表現するクラス）の配列を取得できます。
-let mediaList = MediaLibrary.load(assets: assets)
-// 4. 以下のような形式でメタデータやData型のデータとして取得できます。ただし、これらのメソッドは非同期です。
-mediaList.first!.getData(completionHandler: @escaping (Data?) -> Void)
-mediaList.first!.getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Void)
 ```
+
+2. PHAssetをfetchしておきます
+``` swift
+let assets = PHAsset.fetchAssets(with: nil)
+```
+
+3. Media プロトコル（MediaMetadata-iOSでのカメラロールのメディアを表現するクラス、以下メディアと呼びます）の配列を取得できます。
+``` swift
+let mediaList = MediaLibrary.load(assets: assets)
+```
+
+4. メディアからは以下のような形式でメタデータやData型のデータとして取得できます。ただし、これらのメソッドは非同期です。
+``` swift
+let media = mediaList.first!
+media.getData(completionHandler: @escaping (Data?) -> Void)
+media.getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Void)
+```
+
+5. メタデータはMetadataプロトコルで表現され、メタデータの読み込みや編集は read/write メソッドからできます。メタデータは内部的に[String: Any]として管理されています。
+
+（※ 例えば写真のメタデータはExifやTIFFなどがあり、これらもMetadata型のデータとして表現します。）
+
+6. メタデータをメディアに書き込む際には、メディアの`setMetadata(key: MetadataKey, value: Metadata)`を利用します。
+
+7. メタデータをメディアに書き込んだ後はメディアの`save(completionHandler: @escaping (Bool, Error?) -> Void)`メソッドを呼ぶことでカメラロールに新しいデータとして保存されます。
 
 ## クラス図
 `MediaMetada-iOS`は以下のクラス図をもとに実装されています。
