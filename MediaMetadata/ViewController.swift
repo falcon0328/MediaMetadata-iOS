@@ -8,7 +8,6 @@
 
 import UIKit
 import Photos
-import MediaMetadaSDK
 
 class ViewController: UIViewController {
     let exifUserCommentKey = "UserComment"
