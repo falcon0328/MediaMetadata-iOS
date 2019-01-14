@@ -8,7 +8,7 @@ iOS端末上の写真や動画に対して、簡単にメタデータを付与�
 ![language](https://img.shields.io/badge/language-Swift4.2+-green.svg)
 
 ## インストール条件
-本SDKは以下の環境での動作を保証しています。
+`MediaMetada-iOS`は以下の環境での動作を保証しています。
 - iOS 12.1+
 - Xcode 10.1+
 - Swift 4.2+
@@ -16,13 +16,17 @@ iOS端末上の写真や動画に対して、簡単にメタデータを付与�
 ## 導入方法
 `MediaMetada-iOS`はCarthageでの導入にのみ対応しています。
 ### Carthage
-
+Carthageを使って`MediaMetada-iOS`をXcodeプロジェクトに導入するには、`Cartfile`で以下の文言を指定してください。
+```
+github "falcon0328/MediaMetadata-iOS"
+```
 
 ## 利用方法
 
 
 ## クラス図
 `MediaMetada-iOS`は以下のクラス図をもとに実装されています。
+
 ![クラス図](https://github.com/falcon0328/MediaMetadata-iOS/blob/develop/MediaMetadata-class.png)
 
 ## LICENSE
