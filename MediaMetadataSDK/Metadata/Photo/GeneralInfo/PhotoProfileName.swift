@@ -15,11 +15,11 @@ public struct PhotoProfileName: Metadata {
             return _rawValue
         }
     }
-    private var _rawValue: String = ""
+    private var _rawValue: String
     
-    public init(rawValue: Any) {
+    public init?(rawValue: Any) {
         guard let rawValue = rawValue as? String else {
-            return
+            return nil
         }
         _rawValue = rawValue
     }
