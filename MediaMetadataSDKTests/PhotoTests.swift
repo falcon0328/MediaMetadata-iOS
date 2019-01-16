@@ -16,14 +16,30 @@ class PhotoTests: XCTestCase {
             return testBundle.url(forResource: "meshi", withExtension: "jpg")!
         }
     }
+    var pancakePhotoUrl: URL {
+        get {
+            return testBundle.url(forResource: "pancake",
+                                  withExtension: "jpg")!
+        }
+    }
     var photoData: Data {
         get {
             return try! Data(contentsOf: photoUrl)
         }
     }
+    var pancakePhotoData: Data {
+        get {
+            return try! Data(contentsOf: pancakePhotoUrl)
+        }
+    }
     var photo: Photo {
         get {
             return Photo(data: photoData)
+        }
+    }
+    var pancakePhoto: Photo {
+        get {
+            return Photo(data: pancakePhotoData)
         }
     }
     
@@ -57,13 +73,10 @@ class PhotoTests: XCTestCase {
     
     func test_正常系_getMetadata_Dataを与えた場合_GPS付き() {
         let expectation = XCTestExpectation(description: "test_正常系_getMetadata_Dataを与えた場合_GPS付き")
-        let pancakePhotoUrl = testBundle.url(forResource: "pancake",
-                                       withExtension: "jpg")!
-        let pancakePhotoData = try! Data(contentsOf: pancakePhotoUrl)
-        let pancakePhoto = Photo(data: pancakePhotoData)
         pancakePhoto.getMetadata(completionHandler: { metadatas in
             XCTAssertNotNil(metadatas[.gps])
             expectation.fulfill()
         })
+        wait(for: [expectation], timeout: 1.0)
     }
 }
