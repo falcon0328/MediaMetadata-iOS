@@ -1,7 +1,7 @@
 # MediaMetadata-iOS
 iOS端末上の写真や動画に対して、簡単にメタデータを付与するためのSDKです。
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/hsylife/SwiftyPickerPopover)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/falcon0328/MediaMetadata-iOS)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 ![iOS](https://img.shields.io/badge/iOS-12.1+-green.svg)
 ![Xcode](https://img.shields.io/badge/Xcode-10.1+-green.svg)
