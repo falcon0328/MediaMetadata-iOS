@@ -88,7 +88,7 @@ class Photo: Media {
         let properties = ciImage.properties
         for key in properties.keys {
             guard let metadataKey = MetadataKey(rawValue: key),
-                let values = properties[key] as? [String: Any] else {
+                let values = properties[key] else {
                     continue
             }
             switch metadataKey {
@@ -107,6 +107,30 @@ class Photo: Media {
             case .tiff:
                 let tiff = TIFF(rawValue: values)
                 dict[.tiff] = tiff
+            case .colorModel:
+                let colorModel = PhotoColorModel(rawValue: values)
+                dict[.colorModel] = colorModel
+            case .orientation:
+                let orientation = PhotoOrientation(rawValue: values)
+                dict[.orientation] = orientation
+            case .pixelWidth:
+                let width = PhotoPixelWidth(rawValue: values)
+                dict[.pixelWidth] = width
+            case .pixelHeight:
+                let height = PhotoPixelHeight(rawValue: values)
+                dict[.pixelHeight] = height
+            case .depth:
+                let depth = PhotoDepth(rawValue: values)
+                dict[.depth] = depth
+            case .profileName:
+                let profileName = PhotoProfileName(rawValue: values)
+                dict[.profileName] = profileName
+            case .dpiWidth:
+                let dpiWidth = PhotoDpiWidth(rawValue: values)
+                dict[.dpiWidth] = dpiWidth
+            case .primaryImage:
+                let primaryImage = PhotoPrimaryImage(rawValue: values)
+                dict[.primaryImage] = primaryImage
             }
         }
         completionHandler(dict)
