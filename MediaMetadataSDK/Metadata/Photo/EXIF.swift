@@ -16,11 +16,11 @@ public struct EXIF: Metadata {
         }
     }
     /// 読み書き可能なデータ
-    private var _rawValue: [String : Any] = [:]
+    private var _rawValue: [String : Any]
     
-    public init(rawValue: Any) {
+    public init?(rawValue: Any) {
         guard let rawValue = rawValue as? [String: Any] else {
-            return
+            return nil
         }
         self._rawValue = rawValue
     }
