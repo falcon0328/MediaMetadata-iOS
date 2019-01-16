@@ -79,4 +79,22 @@ class PhotoTests: XCTestCase {
         })
         wait(for: [expectation], timeout: 1.0)
     }
+
+    func test_正常系_getMetadata_Dataを与えた場合_辞書でない値を持つもの() {
+        let expectation = XCTestExpectation(description: "test_正常系_getMetadata_Dataを与えた場合_辞書でない値を持つもの")
+        pancakePhoto.getMetadata(completionHandler: { metadatas in
+            XCTAssertNotNil(metadatas[.colorModel])
+            XCTAssertNotNil(metadatas[.orientation])
+            XCTAssertNotNil(metadatas[.pixelWidth])
+            XCTAssertNotNil(metadatas[.pixelHeight])
+            XCTAssertNotNil(metadatas[.depth])
+            XCTAssertNotNil(metadatas[.profileName])
+            XCTAssertNotNil(metadatas[.dpiWidth])
+            XCTAssertNotNil(metadatas[.primaryImage])
+            XCTAssertEqual(metadatas[.colorModel]?.rawValue as! String, "RGB")
+            XCTAssertEqual(metadatas[.orientation]?.rawValue as! Int, 1)
+            expectation.fulfill()
+        })
+        wait(for: [expectation], timeout: 1.0)
+    }
 }
