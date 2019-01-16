@@ -18,7 +18,10 @@ struct JFIF: Metadata {
     /// 読み書き可能なデータ
     private var _rawValue: [String : Any] = [:]
     
-    public init(rawValue: [String: Any]) {
+    public init(rawValue: Any) {
+        guard let rawValue = rawValue as? [String: Any] else {
+            return
+        }
         self._rawValue = rawValue
     }
     
