@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "1.0",
+  "iOS" : [
+    {
+      "name" : "MediaMetadataSDK",
+      "hash" : "c83f5534699f5b198ec8ae70ee9e4d9a6d73c70bc9efba86dd56f9770836b68a"
+    }
+  ]
+}
