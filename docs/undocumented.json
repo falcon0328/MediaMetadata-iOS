@@ -15,9 +15,23 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Metadata.swift",
+      "line": 22,
+      "symbol": "Metadata.write(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/EXIF.swift",
       "line": 21,
       "symbol": "EXIF.init(rawValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/EXIF.swift",
+      "line": 39,
+      "symbol": "EXIF.write(value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -29,6 +43,125 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GPS.swift",
+      "line": 39,
+      "symbol": "GPS.write(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoColorModel.swift",
+      "line": 20,
+      "symbol": "PhotoColorModel.init(rawValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoColorModel.swift",
+      "line": 30,
+      "symbol": "PhotoColorModel.write(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoDepth.swift",
+      "line": 20,
+      "symbol": "PhotoDepth.init(rawValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoDepth.swift",
+      "line": 30,
+      "symbol": "PhotoDepth.write(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoDpiWidth.swift",
+      "line": 20,
+      "symbol": "PhotoDpiWidth.init(rawValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoDpiWidth.swift",
+      "line": 30,
+      "symbol": "PhotoDpiWidth.write(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoOrientation.swift",
+      "line": 20,
+      "symbol": "PhotoOrientation.init(rawValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoOrientation.swift",
+      "line": 30,
+      "symbol": "PhotoOrientation.write(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoPixelHeight.swift",
+      "line": 20,
+      "symbol": "PhotoPixelHeight.init(rawValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoPixelHeight.swift",
+      "line": 30,
+      "symbol": "PhotoPixelHeight.write(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoPixelWidth.swift",
+      "line": 20,
+      "symbol": "PhotoPixelWidth.init(rawValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoPixelWidth.swift",
+      "line": 30,
+      "symbol": "PhotoPixelWidth.write(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoPrimaryImage.swift",
+      "line": 20,
+      "symbol": "PhotoPrimaryImage.init(rawValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoPrimaryImage.swift",
+      "line": 30,
+      "symbol": "PhotoPrimaryImage.write(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoProfileName.swift",
+      "line": 20,
+      "symbol": "PhotoProfileName.init(rawValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/GeneralInfo/PhotoProfileName.swift",
+      "line": 30,
+      "symbol": "PhotoProfileName.write(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/IPTC.swift",
       "line": 21,
       "symbol": "IPTC.init(rawValue:)",
@@ -36,9 +169,23 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/IPTC.swift",
+      "line": 39,
+      "symbol": "IPTC.write(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/TIFF.swift",
       "line": 21,
       "symbol": "TIFF.init(rawValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aseo/Desktop/MediaMetadata/MediaMetadataSDK/Metadata/Photo/TIFF.swift",
+      "line": 39,
+      "symbol": "TIFF.write(value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
