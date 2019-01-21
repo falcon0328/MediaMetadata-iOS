@@ -45,7 +45,7 @@ public protocol Media {
 }
 
 extension Media {
-    mutating func setMetadata(key: MetadataKey, value: Metadata) {
+    mutating public func setMetadata(key: MetadataKey, value: Metadata) {
         userMetadata[key] = value
     }
 }

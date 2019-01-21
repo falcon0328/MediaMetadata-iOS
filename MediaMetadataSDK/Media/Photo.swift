@@ -11,16 +11,16 @@ import Photos
 import MobileCoreServices
 
 /// 写真データ
-class Photo: Media {
+public class Photo: Media {
     private var asset: PHAsset
     
-    let type: MediaType = .photo
-    var localIdentifier: String {
+    public let type: MediaType = .photo
+    public var localIdentifier: String {
         get {
             return asset.localIdentifier
         }
     }
-    var userMetadata: [MetadataKey : Metadata]
+    public var userMetadata: [MetadataKey : Metadata]
     var data: Data?
     
     init(asset: PHAsset, metadata: [MetadataKey : Metadata]) {
@@ -41,12 +41,12 @@ class Photo: Media {
     ///
     /// - Parameters:
     ///   - asset: メディアのアセットデータ
-    convenience init(asset: PHAsset) {
+    convenience public init(asset: PHAsset) {
         self.init(asset: asset,
                   metadata: [:])
     }
     
-    func getData(completionHandler: @escaping (Data?) -> Void) {
+    public func getData(completionHandler: @escaping (Data?) -> Void) {
         if let data = self.data {
             completionHandler(data)
             return
@@ -60,7 +60,7 @@ class Photo: Media {
         })
     }
     
-    func getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Void) {
+    public func getMetadata(completionHandler: @escaping ([MetadataKey : Metadata]) -> Void) {
         if let data = self.data {
             getMetadata(data: data, completionHandler: completionHandler)
             return
@@ -136,7 +136,7 @@ class Photo: Media {
         completionHandler(dict)
     }
     
-    func save(completionHandler: @escaping (Bool, Error?) -> Void) {
+    public func save(completionHandler: @escaping (Bool, Error?) -> Void) {
         if let data = self.data {
             save(data: data, completionHandler: completionHandler)
             return
